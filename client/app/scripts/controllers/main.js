@@ -1,5 +1,5 @@
-GLClient.controller('MainCtrl', ['$q', '$scope', '$rootScope', '$http', '$route', '$routeParams', '$location',  '$filter', '$translate', '$modal', 'Authentication', 'Node', 'Contexts', 'Receivers', 'WhistleblowerTip', 'GLCache',
-  function($q, $scope, $rootScope, $http, $route, $routeParams, $location, $filter, $translate, $modal, Authentication, Node, Contexts, Receivers, WhistleblowerTip, GLCache) {
+GLClient.controller('MainCtrl', ['$q', '$scope', '$rootScope', '$http', '$route', '$routeParams', '$location',  '$filter', '$translate', '$modal', '$timeout', 'Authentication', 'Node', 'Contexts', 'Receivers', 'WhistleblowerTip', 'GLCache',
+  function($q, $scope, $rootScope, $http, $route, $routeParams, $location, $filter, $translate, $modal, $timeout, Authentication, Node, Contexts, Receivers, WhistleblowerTip, GLCache) {
     $scope.started = false;
     $scope.rtl = false;
     $scope.logo = 'static/globaleaks_logo.png';
@@ -147,6 +147,15 @@ GLClient.controller('MainCtrl', ['$q', '$scope', '$rootScope', '$http', '$route'
     $scope.closeAlert = function(list, index) {
       list.splice(index, 1);
     };
+
+    $scope.clickOnChildInput = function(id) {
+      $timeout(function(){
+        var elem = document.getElementById(id)
+        if (elem) {
+          elem.click();
+        }
+      });
+    }
 
     var init = function () {
 

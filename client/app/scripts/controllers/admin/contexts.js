@@ -95,4 +95,19 @@ GLClient.controller('AdminContextEditorCtrl', ['$scope',
     $scope.editContext.$pristine = false;
   };
 
+  $scope.importSteps = function(steps) {
+    $scope.context.steps = [];
+    console.log(JSON.parse(steps));
+    $scope.context.import_steps = true;
+    $scope.context.steps = JSON.parse(steps);
+    $scope.save_context($scope.context);
+  };
+
+  $scope.exportSteps = function() {
+    var json = JSON.stringify($scope.context.steps);
+    var blob = new Blob([json], {type: "application/json"});
+    saveAs(blob, "fields.json");
+  }
+
+
 }]);

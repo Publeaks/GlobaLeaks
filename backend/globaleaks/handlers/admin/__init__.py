@@ -238,6 +238,7 @@ def admin_serialize_context(store, context, language):
         'enable_private_messages': context.enable_private_messages,
         'presentation_order': context.presentation_order,
         'show_receivers_in_alphabetical_order': context.show_receivers_in_alphabetical_order,
+        'import_steps': False,
         'reset_steps': False,
         'steps': steps
     }
@@ -587,7 +588,10 @@ def update_context(store, context_id, request, language):
         log.err("Unable to update context %s: %s" % (context.name, dberror))
         raise errors.InvalidInputFormat(dberror)
 
-    if request['reset_steps']:
+    if request['import_steps']:
+        db_update_steps(store, context, [], language)
+        db_import_steps(store, context, steps)
+    elif request['reset_steps']:
         db_update_steps(store, context, [], language)
         db_setup_default_steps(store, context)
     else:

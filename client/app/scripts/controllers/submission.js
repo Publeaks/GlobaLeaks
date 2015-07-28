@@ -249,14 +249,6 @@ controller('SubmissionFieldCtrl', ['$scope', function ($scope) {
     $scope.upload_callbacks.push(upload_callback);
   }
 
-  $scope.getClass = function(stepIndex, fieldIndex, toplevel) {
-    if (toplevel) {
-      return "submission-step" + stepIndex + "-field" + fieldIndex;
-    } else {
-      return "";
-    }
-  };
-
   $scope.validateRequiredCheckbox = function(field) {
     if (!field.required) {
       return true;

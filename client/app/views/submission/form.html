@@ -1,6 +1,6 @@
 <fieldset data-ng-init="toplevel = (field === undefined) ? true : false; fields = (field === undefined) ? step.children : field.children;">
   <div data-ng-form="submissionField" data-ng-repeat="field in fields | orderBy:'y'" data-ng-controller="SubmissionFieldCtrl" class="submissionField">
-    <div data-ng-init="fieldId  = $parent.fieldId ? $parent.fieldId + '-' + $index : 'field-' + $index" ng-class="getClass($parent.$index, $index, toplevel)">
+    <div data-ng-init="fieldId  = $parent.fieldId ? $parent.fieldId + '-' + $index : 'field-' + $index">
       <div id="{{::fieldId}}" data-ng-switch="" on="field.type">
         <div data-ng-switch-default="" class="form-group">
           <div>

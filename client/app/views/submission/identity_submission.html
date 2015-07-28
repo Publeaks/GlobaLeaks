@@ -1,0 +1,18 @@
+<div class="submissionField row" data-ng-init="identity=true">
+  <div class="col-md-8">
+    <label>
+      <span class="fieldLabel">Vuoi fornire le tue generalità?</span>
+    </label>
+    <a href="" data-content="Chiarimento a popup..." popover="Chiarimento a popup..." popover-placement="right" popover-trigger="mouseenter">
+      <i class="glyphicon glyphicon-question-sign"></i>
+    </a>
+    <div class="FieldDescription">Chiarimento in linea</div>
+    <div class="submissionFieldInput">
+      <label><input type="radio" ng-model="identity" data-ng-click="identity=true" data-ng-checked="identity == true" /> Sì</label>
+      <label><input type="radio" ng-model="identity" data-ng-click="identity=false"  data-ng-checked="identity == false" /> No</label>
+      <div data-ng-if="identity == true" style="padding-left: 15px">
+        <div data-ng-include="'views/submission/identity_form.html'"></div>
+      </div>
+    </div>
+  </div>
+</div>

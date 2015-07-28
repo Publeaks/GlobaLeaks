@@ -42,6 +42,21 @@
       </div>
 
       <div class="pull-right">
+        <a
+           href="#/custodian"
+           class="btn btn-default">
+          <span class="glyphicon glyphicon-asterisk"></span>
+        </a>
+        <a data-ng-show="workflow>1"
+           data-ng-click="decreaseWorkflow()"
+           class="btn btn-default">
+          <span class="glyphicon glyphicon-arrow-left"></span>
+        </a>
+        <a data-ng-show="workflow<6"
+           data-ng-click="increaseWorkflow()"
+           class="btn btn-default">
+          <span class="glyphicon glyphicon-arrow-right"></span>
+        </a>
         <a id="link-preferences"
            href="#/receiver/preferences"
            popover="{{'Preferences' | translate}}"
@@ -54,7 +69,7 @@
     </div>
   </div>
   <br />
-  <div class="row" data-ng-show="preferences.pgp_key_status != 'enabled'">
+  <div class="row" data-ng-show="false == true">
     <div class="col-md-12">
       <div class="alert alert-warning">
         <i class="glyphicon glyphicon-warning-sign"></i>
@@ -65,7 +80,7 @@
       </div>
     </div>
   </div>
-  <div class="row" data-ng-show="tip_unencrypted">
+  <div class="row" data-ng-show="false == true">
     <div class="col-md-12">
       <div class="alert alert-warning">
         <i class="glyphicon glyphicon-warning-sign"></i>
@@ -105,6 +120,7 @@
     </div>
 
     <div class="col-md-6">
+      <div data-ng-include="'views/submission/identity_tip_receiver.html'"></div>
       <div>
         <div class="TipPageSectionTitle" data-translate>Receiver List</div>
         <table class="table table-striped" id="receiverList">

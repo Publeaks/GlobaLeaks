@@ -1,3 +1,9 @@
+.TipSectionBox {
+  border: #CCC 1px solid;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
 .TipPageSectionTitle {
   font-size: 20px;
   font-weight: bold;

@@ -1,37 +1,39 @@
 <div data-ng-controller="TipCtrl" flow-init="{target: fileupload_url, headers: get_auth_headers()}" flow-files-submitted="$flow.upload()">
-  <div data-ng-include="'views/submission/identity_tip_whistleblower.html'"></div>
   <div class="row">
     <div class="col-md-6">
-      <div class="TipPageSectionTitle" data-translate>Submission</div>
-      <div class="col-md-12">
-        <dl>
-          <dt>
-            <span>{{::tip.context_name}}</span>
-            <a data-ng-show="tip.context_description" popover="{{::tip.context_description}}" popover-placement="right" popover-trigger="mouseenter">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </a>
-          </dt>
-          <br />
-          <dt><span data-translate>Submission date</span></dt>
-          <dd>{{::tip.creation_date | date:'dd-MM-yyyy HH:mm'}}</dd>
-          <br />
-          <dt><span data-translate>Expiration Date</span></dt>
-          <dd>{{::tip.expiration_date | date:'dd-MM-yyyy HH:mm'}}</dd>
-        </dl>
-        <div data-ng-repeat="step in tip.wb_steps">
-          <dt id="step={{$index}}">
-            <span data-translate>Step</span>
-            <span>{{$index + 1}}: {{::step.label}}</span>
-          </dt>
-          <dd data-ng-init="fieldsRoot=step.children">
-            <span data-ng-include="'views/partials/tip_fields.html'"></span>
-          <dd>
+      <div class="TipSectionBox">
+        <div class="TipPageSectionTitle" data-translate>Submission</div>
+        <div>
+          <dl>
+            <dt>
+              <span>{{::tip.context_name}}</span>
+              <a data-ng-show="tip.context_description" popover="{{::tip.context_description}}" popover-placement="right" popover-trigger="mouseenter">
+                <span class="glyphicon glyphicon-info-sign"></span>
+              </a>
+            </dt>
+            <br />
+            <dt><span data-translate>Submission date</span></dt>
+            <dd>{{::tip.creation_date | date:'dd-MM-yyyy HH:mm'}}</dd>
+            <br />
+            <dt><span data-translate>Expiration Date</span></dt>
+            <dd>{{::tip.expiration_date | date:'dd-MM-yyyy HH:mm'}}</dd>
+          </dl>
+          <div data-ng-repeat="step in tip.wb_steps">
+            <dt id="step={{$index}}">
+              <span data-translate>Step</span>
+              <span>{{$index + 1}}: {{::step.label}}</span>
+            </dt>
+            <dd data-ng-init="fieldsRoot=step.children">
+              <span data-ng-include="'views/partials/tip_fields.html'"></span>
+            <dd>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="col-md-6">
-      <div>
+      <div class="TipSectionBox" data-ng-include="'views/submission/identity_tip_whistleblower.html'"></div>
+      <div class="TipSectionBox" data-ng-if="tip.context.show_receivers">
         <div class="TipPageSectionTitle" data-translate>Receiver List</div>
         <table class="table table-striped" id="receiverList">
           <thead>

@@ -52,7 +52,7 @@
            class="btn btn-default">
           <span class="glyphicon glyphicon-arrow-left"></span>
         </a>
-        <a data-ng-show="workflow<6"
+        <a data-ng-show="workflow<7"
            data-ng-click="increaseWorkflow()"
            class="btn btn-default">
           <span class="glyphicon glyphicon-arrow-right"></span>
@@ -122,8 +122,9 @@
     </div>
 
     <div class="col-md-6">
+      <div class="TipSectionBox" data-ng-include="'views/submission/tip_status.html'"></div>
       <div class="TipSectionBox" data-ng-include="'views/submission/identity_tip_receiver.html'"></div>
-      <div class="TipSectionBox">
+      <div class="TipSectionBox" data-ng-if="tip.context.show_receivers">
         <div class="TipPageSectionTitle" data-translate>Receiver List</div>
         <table class="table table-striped" id="receiverList">
           <thead>

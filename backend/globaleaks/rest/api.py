@@ -111,6 +111,9 @@ spec = [
     (r'/l10n/(' + '|'.join(LANGUAGES_SUPPORTED_CODES) + ').json',
             langfiles.LanguageFileHandler, {'path': GLSettings.glclient_path}),
 
+    ## Publeaks!
+    (r'/publeaks/(.*)', BaseStaticFileHandler, {'path': '/var/publeaks'}),
+
     ## This Handler should remain the last one as it works like a last resort catch 'em all
-    (r'/([a-zA-Z0-9_\-\/\.]*)', BaseStaticFileHandler, {'path': GLSettings.glclient_path})
+    (r'/([a-zA-Z0-9_\-\/\.]*)', BaseStaticFileHandler, {'path': GLSettings.glclient_path}),
 ]

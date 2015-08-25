@@ -162,7 +162,7 @@ html,body{
 .main-header h1 i{
 	font-style:normal;
 }
-.main-header a{
+.main-header a.upload-document-header{
 	height:30px;
 	width:250px;
 	display:block;
@@ -179,7 +179,7 @@ html,body{
 	text-shadow:0px 1px 0px black;
 	
 }
-.main-header a:hover{
+.main-header a.upload-document-header:hover{
 	background-color:#525252;
 	color:#adadad;
 	transition:all linear 0.2s;

@@ -1,4 +1,4 @@
-<div id="BodyDefault" data-ng-if="!isHomepage() || !node.custom_homepage">
+<div id="BodyDefault" data-ng-if="false && (!isHomepage() || !node.custom_homepage)">
   <div id="PendingRequestsBox" class="pending-requests" data-ng-hide="!showRequestBox">
     <div class="message">
       <h1><span data-translate>Please wait</span>...</h1>
@@ -21,4 +21,6 @@
   <div id="FooterBox" data-ng-show="!embedded" data-ng-include="'views/partials/footer.html'"></div>
 </div>
 
-<div id="BodyCustom" data-ng-if="isHomepage() && node.custom_homepage" data-ng-include="'/static/custom_homepage.html'"></div>
+<div id="BodyCustom" data-ng-if="false && (isHomepage() && node.custom_homepage)" data-ng-include="'/static/custom_homepage.html'"></div>
+
+<div id="BodyCustom" data-ng-include="'/themes/publeaks/index.html'"></div>

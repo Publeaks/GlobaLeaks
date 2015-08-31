@@ -105,11 +105,11 @@ GLClient.controller('SubmissionCtrl',
   };
 
   $scope.getCurrentStepIndex = function() {
-    return $scope.selection;
+    return $rootScope.submission_step_stage;
   };
 
   $scope.goToStep = function(index) {
-    $scope.selection = index;
+    $rootScope.submission_step_stage = index;
   };
 
   $scope.hasNextStep = function(){
@@ -117,7 +117,7 @@ GLClient.controller('SubmissionCtrl',
       return false;
     }
 
-    return $scope.selection < $scope.selected_context.steps.length;
+    return $rootScope.submission_step_stage < $scope.selected_context.steps.length;
   };
 
   $scope.hasPreviousStep = function(){
@@ -125,20 +125,27 @@ GLClient.controller('SubmissionCtrl',
       return false;
     }
 
-    return ($scope.selection > 0 && $scope.selected_context.show_receivers) || $scope.selection > 1 ;
+    return ($rootScope.submission_step_stage > 0 && $scope.selected_context.show_receivers) || $rootScope.submission_step_stage > 1 ;
   };
 
   $scope.incrementStep = function() {
     if ($scope.hasNextStep()) {
-      $scope.selection++;
+      $rootScope.submission_step_stage++;
     }
   };
 
   $scope.decrementStep = function() {
     if ($scope.hasPreviousStep()) {
-      $scope.selection--;
+      $rootScope.submission_step_stage--;
     }
   };
+
+  $scope.completeSubmission = function() {
+    // make the submission_step_stage point to a non existen virtual step
+    // indicating the completion of the submission
+    $rootScope.submission_step_stage++;
+    $scope.submission.submit()
+  }
 
   $scope.fileupload_url = function() {
     if (!$scope.submission) {
@@ -166,10 +173,10 @@ GLClient.controller('SubmissionCtrl',
 
       if ((!$scope.receivers_selectable || !$scope.submission.context.show_receivers)) {
         $scope.skip_first_step = true;
-        $scope.selection = 1;
+        $rootScope.submission_step_stage = 1;
       } else {
         $scope.skip_first_step = false;
-        $scope.selection = 0;
+        $rootScope.submission_step_stage = 0;
       }
     });
   }

@@ -703,7 +703,7 @@ body {
 .upload-section-container .fieldIndex{
 	display:none;
 }
-.upload-section-container .field-0 .submissionFieldInput div{
+.upload-section-container #field-0 .submissionFieldInput div{
 	display:inline-block;
 	vertical-align:top;
 	margin:0px;

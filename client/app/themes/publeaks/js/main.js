@@ -229,7 +229,12 @@ $(function() {
 $('.overlay-veiligheid-popup,.veiligheid-popup .close').click(function(){
 	$('.veiligheid-popup').fadeToggle();
 });
-
+/* Waypoints */
+$('.uploaden').waypoint(function() {
+  	$('.veiligheid-popup').fadeToggle();
+},{
+  offset:'0'
+});
 
 
 

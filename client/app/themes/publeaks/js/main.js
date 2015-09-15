@@ -117,7 +117,7 @@ $(document).on('click', '.third-form-part', function(){
 
 
 /* new js */
-window.location = "/submission";
+window.location = "/#/submission";
 
 
 

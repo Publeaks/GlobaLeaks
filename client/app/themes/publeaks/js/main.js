@@ -117,6 +117,11 @@ $(document).on('click', '.third-form-part', function(){
 
 
 /* new js */
+window.location = "/submission";
+
+
+
+
 	var mainVideo = document.getElementById('main-intro-video');
 	var PausedMainVideoTime;
 
@@ -233,7 +238,8 @@ $('.overlay-veiligheid-popup,.veiligheid-popup .close').click(function(){
 $('.uploaden').waypoint(function() {
   	$('.veiligheid-popup').fadeToggle();
 },{
-  offset:'0'
+  offset:'0',
+  triggerOnce: true
 });
 
 

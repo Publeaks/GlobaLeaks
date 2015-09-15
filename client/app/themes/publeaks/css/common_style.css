@@ -71,7 +71,9 @@ body {
   color: #fff;
   border-radius: 0px 5px 0px 0px;
 }
-
+.intro header img{
+	height:100px;
+}
 .intro-video {
   height: 810px;
   width: 100%;

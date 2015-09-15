@@ -64,14 +64,14 @@ $('.main-nav a').click(function(){
 	});           
 })(jQuery);
 
-var mainVideo = document.getElementById('main-intro-video');
+var mainVideo = document.getElementById('intro-video');
 var PausedMainVideoTime;
 
 $('.video-overlay').click(function(){
 	$('.intro-video').addClass('video-active-focus');
 	$('body').css("overflow", "hidden");
 	$('.main-intro-video').prop('muted', false);
-	if($('.intro-video').hasClass('watched-video')){
+	if($('.main-intro-video').hasClass('watched-video')){
 		
 		mainVideo.pause();
 	    mainVideo.currentTime = PausedMainVideoTime;

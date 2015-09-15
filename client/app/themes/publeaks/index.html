@@ -167,9 +167,10 @@
 Informatie die je met ons deelt wordt versleuteld.</p>
 			</article>
 			<div class="upload-section-container">
-				
-				<div id="ContentBox" class="container-fluid" data-ng-view="">
 				{{submission_step_stage}}
+				{{ getCurrentStepIndex }} 
+				{{ getCurrentStepIndex() }}
+				<div id="ContentBox" class="container-fluid" data-ng-view="">
 				</div>
 			</div>
 		</section>

@@ -238,8 +238,8 @@ $('.overlay-veiligheid-popup,.veiligheid-popup .close').click(function(){
 $('.uploaden').waypoint(function() {
   	$('.veiligheid-popup').fadeToggle();
 },{
-  offset:'0',
-  triggerOnce: true
+	triggerOnce: true,
+	offset:'0',
 });
 
 

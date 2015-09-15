@@ -286,3 +286,7 @@ function redirectIfOnTor(url, test_url) {
 
   checkTor(yes_cb, undefined, test_url);
 }
+
+
+
+console.log(submission_step_stage);

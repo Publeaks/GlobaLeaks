@@ -682,3 +682,6 @@ body {
   width: 50%;
   padding-bottom: 50px;
 }
+.upload-section-container .container-fluid{
+	padding:0px;
+}

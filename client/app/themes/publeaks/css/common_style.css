@@ -716,3 +716,6 @@ body {
 .upload-section-container .col-md-7{
 	width:100%;
 }
+.upload-section-container #field-0 .submissionFieldInput div div{
+	padding-right:90px;
+}

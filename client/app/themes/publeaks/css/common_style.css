@@ -713,3 +713,6 @@ body {
 .upload-section-container .col-md-12{
 	display:block;
 }
+.upload-section-container .col-md-7{
+	width:100%;
+}

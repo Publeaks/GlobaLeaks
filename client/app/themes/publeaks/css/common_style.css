@@ -700,3 +700,6 @@ body {
 	line-height:20px;
 	color:#333333;
 }
+.upload-section-container .fieldIndex{
+	display:none;
+}

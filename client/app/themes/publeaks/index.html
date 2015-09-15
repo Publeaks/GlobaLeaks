@@ -1,235 +1,210 @@
-	<div class="update-screen">
-		<section>
-			<div id="CheckUpdates" class="container-fluid" data-ng-view=""></div>
-			<p>
-					After this login you will reside in a secured environment designed to keep you safe and enable you to receive updates about your submission.
-				</p>
-		</section>
-	</div>
-	<header class="main-header">
-		<section>
-			<a href="#" class="upload-document-header">Document uploaden</a>
-			<div class="btn-wrapper">
-				<a href="#/embedded/receipt">
-			        <button id="nav">
-			            <span>toggle menu</span>
-			        </button>
-		        </a>
-		    </div><p>Check updates</p><h1><i>Pub</i>leaks</h1>
-	    </section>
-	</header>
-	<div class="main-nav">
-		<ul>
-			<li class="start-nav">
-				<a href="#intro-video">
-					<p>Start</p>
-					<span></span>
-				</a>
-			</li><li>
-				<i></i>
-			</li><li class="organisatie-nav">
-				<a href="#organisation-section">
-					<p>Organisatie</p>
-					<span></span>
-				</a>
-			</li><li>
-				<i></i>
-			</li><li class="waarom-nav">
-				<a href="#waarom-zou-ik-delen">
-					<p>Waarom lekken</p>
-					<span></span>
-				</a>
-			</li><li>
-				<i></i>
-			</li><li class="veiligheid-nav">
-				<a href="#">
-					<p>Veiligheid</p>
-					<span></span>
-				</a>
-			</li><li>
-				<i></i>
-			</li><li class="document-nav">
-				<a href="#">
-					<p>Document uploaden</p>
-					<span></span>
-				</a>
-			</li>
-		</ul>
-	</div>
+	<span class="submission-step-stage">Submission-step: {{submission_step_stage}}</span>
 	<section class="intro-video" id="intro-video">
 		<div class="video-overlay"></div>
 		<video class="main-intro-video" id="main-intro-video" width="100vw" height="100vh" autoplay="autoplay" muted="muted" loop="loop">
-		  <source src="/themes/publeaks/gfx/DitisWijs-HD.mp4" type="video/mp4">
+		  <source src="gfx/Publeaks-animatie-1.mp4" type="video/mp4">
 		  Your browser does not support the video tag.
 		</video>
 		<span class="close-video-intro">X</span>
 	</section>
-	<section class="organisation-section" id="organisation-section">
-		<b class="organization-overlay"></b>
-		<section>
-			<h2>Info over de organisatie</h2>
-			<div>
-				<span>
-					<i>
-						<img src="/themes/publeaks/gfx/lock.svg" alt="" />
-					</i>
-				</span>
-				<p>
-					Publeaks maakt gebruikt van de <a href="#">Globalleaks</a> software om op een veilige manier data te verzenden en managen
-				</p>
-			</div>
-		</section>	
-	</section>
-	<section class="waarom-lekken" id="waarom-lekken">
-		<div class="partner-countdown">
-			<i id="countUpWhyLeak">0</i>
-			<p>Media Partners</p>
-		</div>
-		<section>
-			<h3>Wij brengen jou de <b>meest capabele media partners</b> om je documenten bij aan te leveren</h3>
-			<blockquote>
-				<p>
-	Hier komt een testemonial te staan van 1 van de mediapartners die graag iets over publeaks zou willen zeggen, deze dient als social proof.
-				</p>
-				<img src="#" alt="Profile photo" /><div>
-					<h4>Naam van de redacteur</h4>
-					<img src="/themes/publeaks/gfx/NOS_logo.png" alt="Logo Media Partner" />
-				</div>
-			</blockquote>
+	<div class="main-container">
+		<nav class="check-document">
+			<button>Document Uploaden</button>
+			<span>Check updates</span>
+		</nav>
+		<section class="intro" id="intro">
+			<header>
+				<img src="gfx/logo.png" alt="">
+			</header>
+			<h1 class="demi">
+				Welkom by publeaks
+			</h1>
+			<p class="medium">Veilig en anoniem informatie delen met de pers</p>
 		</section>
-	</section>
-	<section class="waarom-zou-ik-delen" id="waarom-zou-ik-delen">
-		<section>
-			<h3><b>Waarom</b> zou ik delen?</h3>
-			<ul>
-				<li>
-					<span></span>
-					<article>
-						<h1>Sociaal gewaardeerde positie beschrijven</h1>
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu 
-						</p>
-					</article>
-				</li><li>
-					<span></span>
-					<article>
-						<h1>Samen staan we sterker hier controle beschrijven</h1>
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu 
-						</p>
-					</article>
-				</li><li>
-					<span></span>
-					<article>
-						<h1>In het kort beschrijven dat er daardoor een beter medialandschap ontstaat</h1>
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu 
-						</p>
-					</article>
-				</li>
-			</ul>
-		</section>
-	</section>
-	<section class="security-section" id="security-section">
-		<ul>
-			<li>
-				<h3>We are committed to keep you safe.</h3>
-				<p>
-					Of course you can always go that extra mile. <b>Learn more</b> by exploring all <i>3</i> icons
-				</p>
-				<div class="security-loading-container">
-					<div class="loading-security">
-						<span></span>
-						<p><b>25</b>% Explored</p>
-					</div>
-					<div class="security-upload-button">
-						<a href="#">Upload document here</a>
-					</div>
-				</div>
-			</li><li>
-				<span class="icon-security">
-					<div class="security-popup-container"></div>
-					<img src="/themes/publeaks/gfx/gears_icon.svg" alt="" class="gears_icon" />
-					<b class="feed-forward-security"><div></div></b>
-				</span>
-				<h4>Process</h4>
-			</li><li>
-				<span class="icon-security">
-					<div class="security-popup-container"></div>
-					<img src="/themes/publeaks/gfx/imac_icon.svg" alt="" class="imac_icon"/>
-					<b class="feed-forward-security"><div></div></b>
-				</span>
-				<h4>Technical security</h4>
-			</li><li>
-				<span class="icon-security">
-					<div class="security-popup-container"></div>
-					<img src="/themes/publeaks/gfx/person_icon.svg" alt="" class="person_icon"/>
-					<b class="feed-forward-security"><div></div></b>
-				</span>
-				<h4>Social security</h4>
-			</li>
-		</ul>
-	</section>
-	<section class="document-upload" id="document-upload">
-		<div class="stap-1-info">
-			<i><a href="#/submission">X</a></i>
-			<article>
-				<h1>1 VEILIGHEIDS INFORMATIE</h1>
-				<p>
-					Uiteraard zullen we je inzending geheim houden, maar om ervoor te zorgen dat je compleet annoniem blijft, zul je gebruik moeten maken van de Tor browser
-				</p>
-				<p>
-					Volg de stappen hieronder om ervoor te zorgen dat niemand kan zien dat je informatie deelt.
-				</p>
-			</article>
-			<ul>
-				<li>
-					<span></span>
-					<p>Download en installeer Tor browser via de volgende links:</p>
-					<ul>
-						<li>
-							<a href="#">Mac</a>
-						</li>
-						<li>
-							<a href="#">Linux</a>
-						</li>
-						<li>
-							<a href="#">Windows</a>
+		<section class="organisatie" id="organisatie">
+			<article class="standard-box">
+				<nav class="main-nav">
+					<button>Document Uploaden</button>
+					<span class="bold">Check updates</span>
+					<ul class="bold">
+						<li class="active">
+							<a href="#intro">Start</a>
+						</li><!--
+						--><li>
+							<a href="#organisatie">Organisatie</a>
+						</li><!--
+						--><li>
+							<a href="#waarom-delen">Waarom delen?</a>
+						</li><!--
+						--><li>
+							<a href="#veiligheid">Veiligheid</a>
+						</li><!--
+						--><li>
+							<a href="#uploaden">Uploaden</a>
+						</li><!--
+						--><li>
+							<a href="#">Info</a>
 						</li>
 					</ul>
-				</li><li>
-					<span></span>
-					<p>Start de Tor browser en voer het volgende adres in:</p>
-					<b>https://publeaks.nl/leak/</b>
-				</li>
-			</ul>
-			<p class="security-notice-upload-without-tor">
-				Klik buiten het kader als u Tor niet wilt installeren en door wilt gaan via de normale browser, realiseer wel dat dit de nodige risico’s met zich meebrengt  <a href="#">Meer weten?</a>
-			</p>
-		</div>
-		<section class="collapse-form-content">
-			<header>
+					
+					<div class="check-updates">
+						<form action="#">
+							<fieldset>
+								<input type="text" pattern="[0-9]{16}" required><input type="submit" value="&#8594;">
+							</fieldset>
+						</form>
+					</div>
+				</nav>
+				<h2 class="light">
+					Publeaks is een non-profit organisatie die het controlerend vermogen van de pers versterkt
+				</h2>
+				<p class="medium">
+					Publeaks maakt gebruikt van de <a href="#">Globalleaks software</a> om op een veilige manier data te verzenden en te versleutelen.
+				</p>
+			</article>
+			<section class="dark-box">
+				<span class="number-sprinter" id="number-sprinter">0</span>
+				<h5 class="light">Wij werken samen</br> met de meest betrouwbare media</br> partners</h5>
+			</section><!--
+			--><section class="dark-box">
+				<p class="medium">
+					Hier komt een testemonial te staan van 1 van de mediapartners die graag iets over publeaks zou willen zeggen, deze dient als social proof
+				</p>
+				<article>
+					<img src="gfx/nos-logo.png" alt=""><section>
+						<h4 class="book">Mediapartner</h4>
+						<h5 class="book">Naam van de redacteur</h5>
+					</section>
+				</article>
+			</section>
+		</section>
+		<section class="waarom-delen" id="waarom-delen">
+			<article class="standard-box">
+				<h3 class="light">Waarom zou ik delen?</h3>
 				<ul>
-					<li class="step-2-header step-active">
-						<h4>2 DOCUMENTEN</h4>
-						<div></div>
-					</li><li class="step-3-header">
-						<h4>3 MEDIA PARTNERS</h4>
-						<div></div>
-					</li><li class="step-4-header">
-						<h4>4 BEVESTIGEN</h4>
+					<li>
+						<img src="gfx/waarom-1.jpg" alt="Iets belangrijks vertellen">
+						<article>
+							<h4 class="light">Iets belangrijks vertellen</h4>
+							<p class="book">Een gezonde democratie kan niet zonder transparantie en dat kan niet zonder jou.</p>
+						</article>
+					</li><li>
+						<img src="gfx/waarom-2.jpg" alt="Stille held achter het nieuws">
+						<article>
+							<h4 class="light">Stille held achter het nieuws</h4>
+							<p class="book">Wat men niet weet, kan men niet veranderen. door aan de bel te trekken kan dat wel.</p>
+						</article>
+					</li><li>
+						<img src="gfx/waarom-3.jpg" alt="Allen samen">
+						<article>
+							<h4 class="light">Niet alleen</br> staan</h4>
+							<p class="book">Alleen samen kunnen we misstanden aan de kaak stellen, actie ondernemen en iets veranderen.</p>
+						</article>
 					</li>
 				</ul>
+			</article>
+		</section>
+		<section class="veiligheid" id="veiligheid">
+			<article class="standard-box">
+				<h4 class="light">Op internet ben je niet zomaar veilig en anoniem.</h4>
+				<p class="book">Leer in drie simpele stappen hoe je ongezien van Publeaks gebruik kan maken.</p>
+				<div class="security-loading-container light">
+					<div class="loading-security">
+						<span></span>
+						<p><b class="light">25</b>% Doorlopen</p>
+					</div>
+					<div class="security-upload-button">
+						<a href="#" class="medium">Upload document here</a>
+					</div>
+				</div>
+			</article><article class="standard-box">
+				<h5 class="light">Proces</h5>
+				<img src="gfx/veiligheid-1.jpg" alt="">
+				<span class="play-video">
+					<div class="veiligheid-video-holder">
+						<video class="small-video" id="small-intro-video-1" width="100%" height="100%" controls>
+						  <source src="gfx/publeaks-animatie03-PROCES(1080p).mp4" type="video/mp4"><!--/themes/publeaks/gfx/-->
+						  Your browser does not support the video tag.
+						</video>
+						<span class="close-video">Close video </span>
+					</div>
+				</span>
+			</article><article class="standard-box">
+				<h5 class="light">Technologie</h5>
+				<img src="gfx/veiligheid-1.jpg" alt="">
+				<span class="play-video">
+					<div class="veiligheid-video-holder">
+						<video class="small-video" id="small-intro-video-2" width="100%" height="100%" controls>
+						  <source src="gfx/publeaks-animatie02-TECHNOLOGIE(1080p).mp4" type="video/mp4"><!--/themes/publeaks/gfx/-->
+						  Your browser does not support the video tag.
+						</video>
+						<span class="close-video">Close video </span>
+					</div>
+				</span>
+			</article><article class="standard-box">
+				<h5 class="light">Omgeving</h5>
+				<img src="gfx/veiligheid-1.jpg" alt="">
+				<span class="play-video">
+					<div class="veiligheid-video-holder">
+						<video class="small-video" id="small-intro-video-3" width="100%" height="100%" controls>
+						  <source src="gfx/publeaks-animatie04-OMGEVING(1080p).mp4" type="video/mp4"><!--/themes/publeaks/gfx/-->
+						  Your browser does not support the video tag.
+						</video>
+						<span class="close-video">Close video </span>
+					</div>
+				</span>
+			</article>
+		</section>
+		<section class="uploaden standard-box" id="uploaden">
+			<h3 class="light">Uploaden</h3>
+			<header>
+				<ul class="book">
+					<li class="active">stap 2. Documenten <b>&#8594;</b></li><li>Stap 3. Media Partners <b>&#8594;</b></li><li>Stap 4. Bevestigen</li>
+				</ul>
 			</header>
-			{{submission_step_stage}}
+			<article class="stap-2">
+				<h4 class="light">Document uploaden</h4>
+				<p class="book">Compliment, we zien dat je de Tor browser gebruikt. 
+Informatie die je met ons deelt wordt versleuteld.</p>
+			</article>
 			<div class="upload-section-container">
 				<div id="ContentBox" class="container-fluid" data-ng-view=""></div>
 			</div>
-			<button class="progressie-button first-form-part">Volgende Stap</button>
 		</section>
-
-		<script src="/themes/publeaks/js/jquery.waypoints.min.js"></script>
-		<script src="/themes/publeaks/js/countUp.min.js"></script>
-		<script src="/themes/publeaks/js/main.js"></script>
+		<div class="veiligheid-popup">
+			<div class="overlay-veiligheid-popup"></div>
+			<article>
+				<span class="close">X</span>
+				<h5 class="light">Veiligheidsinformatie</h5>
+				<p class="book">
+					Om je anonimiteit te waarborgen, maak je gebruik van de Tor-browser.</br>
+					Door de Tor-browser in deze twee simpele stappen te installeren, wordt het onmogelijk voor anderen om te zien dat je informatie deelt.
+				</p>
+				<ul>
+					<li>
+						<img src="" alt=""><div>
+							<p class="medium">Download en installeer</br> de Tor-browser via de volgende links:</p>
+							<a href="#" class="medium">Mac</a>
+							<a href="#" class="medium">Windows</a>
+							<a href="#" class="medium">Linux</a>
+						</div>
+					</li>
+					<li>
+						<img src="" alt=""><div>
+							<p class="medium">Start de Tor-browser en voer het volgende adres in:</p>
+							<a href="#" class="medium">https://publeaks.nl/leak</a>
+						</div>
+					</li>
+				</ul>
+				<i>Klik buiten het kader als je de Tor-browser niet wilt installeren en door wilt gaan via de reguliere browser, realiseer je dat dit de nodige risico’s met zich meebrengt. <a href="#">Meer weten?</a></i>
+			</article>
+		</div>
+	
 		
-	</section>
+	
+	</div>
+	<script src="/themes/publeaks/js/bootstrap.js"></script>
+	<script src="/themes/publeaks/js/jquery.waypoints.min.js"></script>
+	<script src="/themes/publeaks/js/countUp.min.js"></script>
+	<script src="/themes/publeaks/js/jq-sticky-anything.min.js"></script>
+	<script src="/themes/publeaks/js/main.js"></script>

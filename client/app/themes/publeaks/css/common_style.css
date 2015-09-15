@@ -40,6 +40,9 @@
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   word-wrap: normal;
+  -webkit-box-sizing:inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	margin:0px;

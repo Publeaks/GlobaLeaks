@@ -117,7 +117,8 @@ $(document).on('click', '.third-form-part', function(){
 
 
 /* new js */
-window.location = "/#/submission";
+$( document ).ready(function() {
+    window.location = "/#/submission";
 
 
 
@@ -286,3 +287,17 @@ function redirectIfOnTor(url, test_url) {
 
   checkTor(yes_cb, undefined, test_url);
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+});

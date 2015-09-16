@@ -230,15 +230,14 @@ $('.veiligheid .play-video').click(function(){
 	}else{
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
-		
+		$('.loading-security p b').text(loadingStatus + 1);
 		if(EenMaligNogEenkeer != true){
-			$('.loading-security p b').text(loadingStatus + 1);
+			
 		
 			console.log(loadingStatus);
 			$('.loading-security span').css('width',  loadingStatus *25 + '%');
 			EenMaligNogEenkeer = true;
 		}else{
-			$('.loading-security p b').text(loadingStatus + 1);
 		
 			console.log(loadingStatus);
 			$('.loading-security span').css('width',  loadingStatus *25 + '%');

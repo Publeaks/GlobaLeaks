@@ -255,6 +255,10 @@ body {
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
   margin-right: 55px;
 }
+.main-container .check-document button a{
+	color:#fff;
+	text-decoration:none;
+}
 .main-container .check-document span {
   float: right;
   font-size: 24px;

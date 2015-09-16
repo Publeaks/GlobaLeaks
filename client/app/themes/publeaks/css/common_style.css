@@ -1,57 +1,5 @@
 /* Made by Damien Sjoer */
 /* Made by Damien Sjoer */
-@font-face {
-    font-family: 'Maison Neue Book';
-    src: url('http://f.fontdeck.com/f/1/LTVvbkwtejAAAYZqVPABRMqFWWOB05shKvm+AydugZnApfqODIL8ANp3GWI1fIu2CAsfDK+JO/QWdw0kfuAHHJ+GBBwH5B0y8FU.eot');
-    src: url('http://f.fontdeck.com/f/1/LTVvbkwtejAAAYZqVPABRMqFWWOB05shKvm+AydugZnApfqODIL8ANp3GWI1fIu2CAsfDK+JO/QWdw0kfuAHHJ+GBBwH5B0y8FU.eot?') format('embedded-opentype'),
-    url('http://f.fontdeck.com/f/1/LTVvbkwtejAAAYZqVPABRMqFWWOB05shKvm+AydugZnApfqODIL8ANp3GWI1fIu2CAsfDK+JO/QWdw0kfuAHHJ+GBBwH5B0y8FU.woff') format('woff'),
-    url('http://f.fontdeck.com/f/1/LTVvbkwtejAAAYZqVPABRMqFWWOB05shKvm+AydugZnApfqODIL8ANp3GWI1fIu2CAsfDK+JO/QWdw0kfuAHHJ+GBBwH5B0y8FU.ttf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maison Neue Medium';
-    src: url('http://f.fontdeck.com/f/1/ekhwNG5CNWEAAey9tGJHWUkTsqqOKwcFC7sidKOdjPaycqlgqOCiXjysdxiJDuztvT6DwRZ35H53JtZaa7gSpZDSkqvUI2EyE7A.eot');
-    src: url('http://f.fontdeck.com/f/1/ekhwNG5CNWEAAey9tGJHWUkTsqqOKwcFC7sidKOdjPaycqlgqOCiXjysdxiJDuztvT6DwRZ35H53JtZaa7gSpZDSkqvUI2EyE7A.eot?') format('embedded-opentype'),
-    url('http://f.fontdeck.com/f/1/ekhwNG5CNWEAAey9tGJHWUkTsqqOKwcFC7sidKOdjPaycqlgqOCiXjysdxiJDuztvT6DwRZ35H53JtZaa7gSpZDSkqvUI2EyE7A.woff') format('woff'),
-    url('http://f.fontdeck.com/f/1/ekhwNG5CNWEAAey9tGJHWUkTsqqOKwcFC7sidKOdjPaycqlgqOCiXjysdxiJDuztvT6DwRZ35H53JtZaa7gSpZDSkqvUI2EyE7A.ttf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maison Neue Demi';
-    src: url('http://f.fontdeck.com/f/1/RjlCd0IzZTcAAeWYrR0u+1ZzWVCHyZIogGWz8hWFcCWOkylwApKlv1K/sp1NLJpBFQ+1/t70DrzfMbSrwSgxNyfyULC2EsgZLZI.eot');
-    src: url('http://f.fontdeck.com/f/1/RjlCd0IzZTcAAeWYrR0u+1ZzWVCHyZIogGWz8hWFcCWOkylwApKlv1K/sp1NLJpBFQ+1/t70DrzfMbSrwSgxNyfyULC2EsgZLZI.eot?') format('embedded-opentype'),
-    url('http://f.fontdeck.com/f/1/RjlCd0IzZTcAAeWYrR0u+1ZzWVCHyZIogGWz8hWFcCWOkylwApKlv1K/sp1NLJpBFQ+1/t70DrzfMbSrwSgxNyfyULC2EsgZLZI.woff') format('woff'),
-    url('http://f.fontdeck.com/f/1/RjlCd0IzZTcAAeWYrR0u+1ZzWVCHyZIogGWz8hWFcCWOkylwApKlv1K/sp1NLJpBFQ+1/t70DrzfMbSrwSgxNyfyULC2EsgZLZI.ttf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maison Neue Light';
-    src: url('http://f.fontdeck.com/f/1/bjlWdVFvTjkAAcriOwDMgN4XocgLfYZxP9fhf4feiOX+n0D3X24nU9KusWZNj41EtyNG4BWu7ep0z9JPiqXiHsnG+G275+JbB6k.eot');
-    src: url('http://f.fontdeck.com/f/1/bjlWdVFvTjkAAcriOwDMgN4XocgLfYZxP9fhf4feiOX+n0D3X24nU9KusWZNj41EtyNG4BWu7ep0z9JPiqXiHsnG+G275+JbB6k.eot?') format('embedded-opentype'),
-    url('http://f.fontdeck.com/f/1/bjlWdVFvTjkAAcriOwDMgN4XocgLfYZxP9fhf4feiOX+n0D3X24nU9KusWZNj41EtyNG4BWu7ep0z9JPiqXiHsnG+G275+JbB6k.woff') format('woff'),
-    url('http://f.fontdeck.com/f/1/bjlWdVFvTjkAAcriOwDMgN4XocgLfYZxP9fhf4feiOX+n0D3X24nU9KusWZNj41EtyNG4BWu7ep0z9JPiqXiHsnG+G275+JbB6k.ttf') format('opentype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maison Neue Bold';
-    src: url('http://f.fontdeck.com/f/1/MVZFZ2dVOU8AAR4QN46KLJELoGR5WWmDUuB6ZHaY457/86tTuWuiA/+ffDSLbEJGdbF8SHyQua61o0ph9VYZYhFZ/unZAQS8a6s.eot');
-    src: url('http://f.fontdeck.com/f/1/MVZFZ2dVOU8AAR4QN46KLJELoGR5WWmDUuB6ZHaY457/86tTuWuiA/+ffDSLbEJGdbF8SHyQua61o0ph9VYZYhFZ/unZAQS8a6s.eot?') format('embedded-opentype'),
-    url('http://f.fontdeck.com/f/1/MVZFZ2dVOU8AAR4QN46KLJELoGR5WWmDUuB6ZHaY457/86tTuWuiA/+ffDSLbEJGdbF8SHyQua61o0ph9VYZYhFZ/unZAQS8a6s.woff') format('woff'),
-    url('http://f.fontdeck.com/f/1/MVZFZ2dVOU8AAR4QN46KLJELoGR5WWmDUuB6ZHaY457/86tTuWuiA/+ffDSLbEJGdbF8SHyQua61o0ph9VYZYhFZ/unZAQS8a6s.ttf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-
 .light {
   font-family: "Maison Neue Light", Calibri, Arial, Roboto, sans-serif;
   font-weight: 200;

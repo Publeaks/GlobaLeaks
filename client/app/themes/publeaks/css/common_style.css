@@ -224,11 +224,15 @@ body {
   transition: opacity linear 0.3s;
 }
 .main-nav.cloned{
-	
+	top: 0px !important;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+
 }
 .main-nav.cloned button {
   opacity: 1;
   transition: opacity linear 0.3s;
+  margin-right:30px;
 }
 .main-nav.cloned span {
   opacity: 1;
@@ -261,7 +265,7 @@ body {
   color: #fff;
   float: right;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-  margin-right: 55px;
+  margin-right: 30px;
 }
 .main-container .check-document button a{
 	color:#fff;
@@ -295,13 +299,14 @@ body {
 .organisatie {
   max-width: 1344px;
   width: 100%;
-  padding-top:100px;
+ 
 }
 .organisatie article h2 {
   font-size: 100px;
   line-height: 100px;
   color: #333333;
   width: 92%;
+  padding-top:100px;
 }
 .organisatie article p {
   font-size: 30px;
@@ -756,5 +761,5 @@ body {
     max-width: 1252px;
 }
 #step-1 .row .col-md-7 div div div:nth-child(2){
-	
+	width:560px;
 }

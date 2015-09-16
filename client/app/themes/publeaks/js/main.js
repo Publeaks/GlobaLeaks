@@ -228,7 +228,7 @@ $('.veiligheid .play-video').click(function(){
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		$('.loading-security p b').text(loadingStatus+1);
 		//var currentElementProgressWidth = loadingStatus * 25;
-		console.log(currentElementProgressWidth);
+		console.log(loadingStatus);
 		$('.loading-security span').css('width',  loadingStatus *25 + '%');
 	}
 });

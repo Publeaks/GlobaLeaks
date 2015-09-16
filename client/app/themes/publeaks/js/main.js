@@ -220,17 +220,29 @@ $('.veiligheid .play-video').click(function(){
 		console.log('Does not equal 4/4 completion');
 	}
 });
+
+
+var EenMaligNogEenkeer = true;
+
 $('.veiligheid .play-video').click(function(){
 	if($(this).hasClass('Progression-step')){
 		//do nothing
 	}else{
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
-		$('.loading-security p b').text(loadingStatus+1,function(){
+		
+		if(EenMaligNogEenkeer = true){
+			$('.loading-security p b').text(loadingStatus+2);
+		
 			console.log(loadingStatus);
 			$('.loading-security span').css('width',  loadingStatus *25 + '%');
-		});
-		//var currentElementProgressWidth = loadingStatus * 25;
+			EenMaligNogEenkeer = false;
+		}else{
+			$('.loading-security p b').text(loadingStatus+1);
+		
+			console.log(loadingStatus);
+			$('.loading-security span').css('width',  loadingStatus *25 + '%');
+		}
 		
 	}
 });

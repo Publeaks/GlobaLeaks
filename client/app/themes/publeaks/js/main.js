@@ -222,8 +222,6 @@ $('.veiligheid .play-video').click(function(){
 });
 
 
-var EenMaligNogEenkeer = false;
-
 $('.veiligheid .play-video').click(function(){
 	if($(this).hasClass('Progression-step')){
 		//do nothing
@@ -231,21 +229,22 @@ $('.veiligheid .play-video').click(function(){
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		$('.loading-security p b').text(loadingStatus + 1);
-		if(EenMaligNogEenkeer != true){
-			
-		
-			console.log(loadingStatus);
-			$('.loading-security span').css('width',  loadingStatus *25 + '%');
-			EenMaligNogEenkeer = true;
-		}else{
-		
-			console.log(loadingStatus);
-			$('.loading-security span').css('width',  loadingStatus *25 + '%');
-			EenMaligNogEenkeer = true;
-		}
 		
 	}
 });
+
+$('.veiligheid .play-video').click(function(){
+	if($(this).hasClass('Progression-step')){
+		//do nothing
+	}else{
+		console.log(loadingStatus);
+		$('.loading-security span').css('width',  loadingStatus *25 + '%');
+		EenMaligNogEenkeer = true;
+		
+	}
+});
+
+
 $('.main-nav a').click(function(){
 	$('.main-nav li').removeClass('active');
 	$(this).parent().addClass('active');

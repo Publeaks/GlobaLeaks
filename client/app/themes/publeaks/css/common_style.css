@@ -755,7 +755,7 @@ body {
 	padding-right:45px;
 	width:auto !important;
 }
-.upload-section-container #field-0 .submissionFieldInput{
+.upload-section-container #field-0 .submissionFieldInput,.upload-section-container #field-6 .submissionFieldInput{
 	width:auto !important;
 }
 #step-1{
@@ -795,7 +795,7 @@ body {
 	display:none;
 }
 
-#field-1 .submissionFieldInput,#field-3 .submissionFieldInput{
+#field-1 .submissionFieldInput,#field-3 .submissionFieldInput,#field-5 .submissionFieldInput,#field-6 .submissionFieldInput{
 	padding-left:0px;
 }
 #field-1 label,#field-3 label,#field-5 label,#field-6 label{
@@ -818,7 +818,7 @@ body {
     font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
 	font-weight: 300;
 	font-style: normal;
-    
+    margin-top: -30px;
 }
 #field-2,#field-4{
     padding-left: 70px;
@@ -826,4 +826,35 @@ body {
 }
 #field-2 span.fieldLabel,#field-4 span.fieldLabel{
 	padding-left:30px;
+}
+.upload-section-container #field-5 .submissionFieldInput{
+	display: block;
+    padding-left: 0px;
+    width: 1185px;
+}
+.upload-section-container #field-5 textarea,.upload-section-container #field-6 textarea{
+	overflow: hidden;
+    word-wrap: break-word;
+    resize: horizontal;
+    height: 40px;
+    width: 1173px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+    border-radius: 0px;
+    min-height: 126px;
+    resize: none;
+    font-size: 24px;
+    color: #333333;
+    font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 26px;
+    margin-top:-30px;
+}
+.upload-section-container #field-6 textarea{
+	width:600px;
+}
+.upload-section-container #field-6 .fieldLabel,.upload-section-container #field-5 .fieldLabel,.upload-section-container #field-4 .fieldLabel,.upload-section-container #field-3 .fieldLabel,.upload-section-container #field-2 .fieldLabel,.upload-section-container #field-1 .fieldLabel{
+	margin-bottom: -20px;
 }

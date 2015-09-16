@@ -228,7 +228,7 @@ $('.veiligheid .play-video').click(function(){
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		$('.loading-security p b').text(loadingStatus+1);
 		var tempNewCounter = 1;
-		tempNewCounter ++;
+		tempNewCounter +1;
 		var currentElementProgressWidth = tempNewCounter * 25;
 		console.log(currentElementProgressWidth);
 		$('.loading-security span').css('width',  currentElementProgressWidth + '%');

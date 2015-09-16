@@ -170,9 +170,15 @@ body {
 }
 
 .main-nav {
-  max-width: 1234px;
+  /*max-width: 1234px;
   width: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 60px;*/
+    max-width: 1284px;
+    width: 100%;
+    position: absolute;
+    padding-left: 60px;
+    left: 0px;
+    background-color:#fff;
 }
 .main-nav ul li {
   display: inline-block;
@@ -217,7 +223,9 @@ body {
   opacity: 0;
   transition: opacity linear 0.3s;
 }
-
+.main-nav.cloned{
+	
+}
 .main-nav.cloned button {
   opacity: 1;
   transition: opacity linear 0.3s;
@@ -261,7 +269,7 @@ body {
 }
 .main-container .check-document span {
   float: right;
-  font-size: 24px;
+  font-size: 17px;
   color: #9e9e9e;
   text-decoration: underline;
   margin-right: 35px;
@@ -287,6 +295,7 @@ body {
 .organisatie {
   max-width: 1344px;
   width: 100%;
+  padding-top:100px;
 }
 .organisatie article h2 {
   font-size: 100px;
@@ -733,4 +742,19 @@ body {
 }
 .upload-section-container #field-0 .submissionFieldInput .submissionFieldInput div div{
 	padding-right:45px;
+}
+#step-1 form{
+	background-color: #fff;
+    max-width: 1224px;
+    width: 100%;
+    min-height: 300px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    max-width: 1252px;
+}
+#step-1 .row .col-md-7 div div div:nth-child(2){
+	
 }

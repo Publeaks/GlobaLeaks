@@ -755,6 +755,9 @@ body {
 	padding-right:45px;
 	width:auto !important;
 }
+.upload-section-container #field-0 .submissionFieldInput{
+	width:auto !important;
+}
 #step-1{
 	background-color: #fff;
     max-width: 1224px;
@@ -780,4 +783,41 @@ body {
 
 .text-red{
 	display:none;
+}
+
+#field-1 .submissionFieldInput{
+	padding-left:0px;
+}
+#field-1 label{
+	padding-left:20px;
+}
+#field-1 select{
+	-webkit-appearance: none;
+	appearance:none;
+    padding-left: 10px;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    border-bottom: 1px solid #eeeeee;
+    border-radius: 0px;
+    -webkit-border-radius:none;
+    font-size: 24px;
+    color: #333333;
+    padding-right: 0px;
+    width: 545px;
+}
+#field-2 select{
+	-webkit-appearance: none;
+	appearance:none;
+    padding-left: 10px;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    border-bottom: 1px solid #eeeeee;
+    border-radius: 0px;
+    -webkit-border-radius:none;
+    font-size: 24px;
+    color: #333333;
+    padding-right: 0px;
+    width: 545px;
 }

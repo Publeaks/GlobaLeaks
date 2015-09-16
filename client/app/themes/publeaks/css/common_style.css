@@ -120,6 +120,20 @@ body {
   left: 0px;
   margin: 0px;
 }
+.video-active-focus video{
+	cursor: url('../gfx/close-video-cross.png?v1'), default;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+}
 .video-active-focus .video-overlay {
   display: none;
 }
@@ -717,5 +731,5 @@ body {
 	width:100%;
 }
 .upload-section-container #field-0 .submissionFieldInput .submissionFieldInput div div{
-	padding-right:90px;
+	padding-right:45px;
 }

@@ -123,8 +123,16 @@ $( document ).ready(function() {
 
 
 
+	document.getElementById('main-intro-video').addEventListener('loadedmetadata', function() {
+	  this.currentTime = 11.014395;
+	}, false);
+
 	var mainVideo = document.getElementById('main-intro-video');
 	var PausedMainVideoTime;
+	var StartVideoPos = 11.014395;
+
+
+
 
 $('.video-overlay').click(function(){
 	$('.intro-video').addClass('video-active-focus');
@@ -152,6 +160,8 @@ $('.close-video-intro').click(function(){
 	$('.main-intro-video').prop('muted', true);
 	PausedMainVideoTime = mainVideo.currentTime;
 	console.log(PausedMainVideoTime);
+	mainVideo.currentTime = StartVideoPos;
+	mainVideo.pause();
 });
 $('.intro-video video').click(function(){
 	$('.intro-video').removeClass('video-active-focus');
@@ -159,7 +169,10 @@ $('.intro-video video').click(function(){
 	$('.main-intro-video').prop('muted', true);
 	PausedMainVideoTime = mainVideo.currentTime;
 	console.log(PausedMainVideoTime);
+	mainVideo.currentTime = StartVideoPos;
+	mainVideo.pause();
 });
+
 
 
 

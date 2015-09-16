@@ -739,6 +739,12 @@ body {
 	vertical-align:top;
 	margin:0px;
 }
+.upload-section-container #field-0 label{
+	padding-left:20px;
+}
+.upload-section-container #field-0{
+	padding-bottom:30px;
+}
 .upload-section-container .col-md-12{
 	display:block;
 }
@@ -747,8 +753,9 @@ body {
 }
 .upload-section-container #field-0 .submissionFieldInput .submissionFieldInput div div{
 	padding-right:45px;
+	width:auto !important;
 }
-#step-1 form{
+#step-1{
 	background-color: #fff;
     max-width: 1224px;
     width: 100%;
@@ -762,4 +769,15 @@ body {
 }
 #step-1 .row .col-md-7 div div div:nth-child(2){
 	width:560px;
+	display:inline-block;
+	vertical-align:top;
+}
+#step-1 .row .col-md-7 div div div:nth-child(3){
+	width:560px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.text-red{
+	display:none;
 }

@@ -232,13 +232,13 @@ $('.veiligheid .play-video').click(function(){
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		
 		if(EenMaligNogEenkeer != true){
-			$('.loading-security p b').text(loadingStatus+1);
+			$('.loading-security p b').text(loadingStatus + 1);
 		
 			console.log(loadingStatus);
-			$('.loading-security span').css('width',  loadingStatus *50 + '%');
+			$('.loading-security span').css('width',  loadingStatus *25 + '%');
 			EenMaligNogEenkeer = true;
 		}else{
-			$('.loading-security p b').text(loadingStatus+1);
+			$('.loading-security p b').text(loadingStatus + 1);
 		
 			console.log(loadingStatus);
 			$('.loading-security span').css('width',  loadingStatus *25 + '%');

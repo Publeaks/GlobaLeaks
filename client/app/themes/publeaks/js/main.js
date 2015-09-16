@@ -227,7 +227,8 @@ $('.veiligheid .play-video').click(function(){
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		$('.loading-security p b').text(loadingStatus+1);
-		$('.loading-security span').css('width', width + 25.40 + '%');
+		var currentElementProgressWidth = $('.loading-security span').width();
+		$('.loading-security span').css('width',  currentElementProgressWidth + 25.40 + '%');
 	}
 });
 $('.main-nav a').click(function(){

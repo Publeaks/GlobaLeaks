@@ -780,6 +780,16 @@ body {
 	display:inline-block;
 	vertical-align:top;
 }
+#step-1 .row .col-md-7 div div div:nth-child(4){
+	width:560px;
+	display:inline-block;
+	vertical-align:top;
+}
+#step-1 .row .col-md-7 div div div:nth-child(5){
+	width:560px;
+	display:inline-block;
+	vertical-align:top;
+}
 
 .text-red{
 	display:none;

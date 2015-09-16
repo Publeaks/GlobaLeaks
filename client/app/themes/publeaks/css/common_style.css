@@ -448,7 +448,7 @@ body {
   height: 100vh;
   display: block;
   background-color: #fff;
-  cursor:url('gfx/close-video-cursor.png?v1');
+  cursor: url('../gfx/close-video-cursor.png?v1'), default;
 }
 .veiligheid .veiligheid-video-holder span, .veiligheid .veiligheid-video-holder video span {
   position: absolute;

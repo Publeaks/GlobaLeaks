@@ -227,9 +227,7 @@ $('.veiligheid .play-video').click(function(){
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		$('.loading-security p b').text(loadingStatus+1);
-		var tempNewCounter = 1;
-		tempNewCounter +1;
-		var currentElementProgressWidth = tempNewCounter * 25;
+		var currentElementProgressWidth = loadingStatus * 25;
 		console.log(currentElementProgressWidth);
 		$('.loading-security span').css('width',  currentElementProgressWidth + '%');
 	}
@@ -259,8 +257,8 @@ $('.overlay-veiligheid-popup,.veiligheid-popup .close').click(function(){
 /* Waypoints */
 $('.uploaden').waypoint(function() {
   	$('.veiligheid-popup').fadeToggle();
+  	this.destroy()
 },{
-	triggerOnce: true,
 	offset:'0',
 });
 

@@ -183,7 +183,7 @@ $('.intro-video video').click(function(){
 
 
 $('.main-nav').stickThis({
-    top:        27,      // top position of sticky element, measured from 'ceiling'
+    top:        26,      // top position of sticky element, measured from 'ceiling'
     minscreenwidth: 0,      // element will not be sticky when viewport width smaller than this
     maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this 
     zindex:     800,      // z-index value of sticky element
@@ -226,7 +226,7 @@ $('.veiligheid .play-video').click(function(){
 	}else{
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
-		$('.loading-security p b').text(loadingStatus+25);
+		$('.loading-security p b').text(loadingStatus+1);
 		$('.loading-security span').css('width', loadingStatus + 25.40 + '%');
 	}
 });

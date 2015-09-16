@@ -91,7 +91,7 @@ body {
   height: 810px;
   width: 100%;
   z-index: 10;
-  background-color: rgba(52, 52, 52, 0.5);
+  background-color: rgba(52, 52, 52, 0.8);
 }
 .intro-video video {
   width:100%;
@@ -262,6 +262,7 @@ body {
   text-decoration: underline;
   margin-right: 35px;
   line-height: 50px;
+  cursor:pointer;
 }
 
 .intro {

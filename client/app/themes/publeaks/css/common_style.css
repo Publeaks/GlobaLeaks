@@ -785,13 +785,13 @@ body {
 	display:none;
 }
 
-#field-1 .submissionFieldInput{
+#field-1 .submissionFieldInput,#field-3 .submissionFieldInput{
 	padding-left:0px;
 }
-#field-1 label{
+#field-1 label,#field-3 label{
 	padding-left:20px;
 }
-#field-1 select{
+#field-1 select,#field-2 select,#field-3 select,#field-4 select{
 	-webkit-appearance: none;
 	appearance:none;
     padding-left: 10px;
@@ -806,18 +806,10 @@ body {
     padding-right: 0px;
     width: 545px;
 }
-#field-2 select{
-	-webkit-appearance: none;
-	appearance:none;
-    padding-left: 10px;
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow:none;
-    border-bottom: 1px solid #eeeeee;
-    border-radius: 0px;
-    -webkit-border-radius:none;
-    font-size: 24px;
-    color: #333333;
-    padding-right: 0px;
-    width: 545px;
+#field-2,#field-4{
+    padding-left: 70px;
+
+}
+#field-2 span.fieldLabel,#field-4 span.fieldLabel{
+	padding-left:30px;
 }

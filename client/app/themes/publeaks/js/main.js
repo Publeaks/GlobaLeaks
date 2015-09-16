@@ -264,6 +264,36 @@ $('.uploaden').waypoint(function() {
 },{
 	offset:'0',
 });
+$('.intro').waypoint(function() {
+  	$('.main-nav ul li').removeClass('active');
+  	$('.main-nav ul li.start-link').addClass('active');
+},{
+	offset:'0',
+});
+$('.organisatie').waypoint(function() {
+  	$('.main-nav ul li').removeClass('active');
+  	$('.main-nav ul li.organisatie-link').addClass('active');
+},{
+	offset:'0',
+});
+$('.waarom-delen').waypoint(function() {
+  	$('.main-nav ul li').removeClass('active');
+  	$('.main-nav ul li.waarom-delen-link').addClass('active');
+},{
+	offset:'0',
+});
+$('.veiligheid').waypoint(function() {
+  	$('.main-nav ul li').removeClass('active');
+  	$('.main-nav ul li.veiligheid-link').addClass('active');
+},{
+	offset:'0',
+});
+$('.uploaden').waypoint(function() {
+  	$('.main-nav ul li').removeClass('active');
+  	$('.main-nav ul li.uploaden-link').addClass('active');
+},{
+	offset:'0',
+});
 
 
 

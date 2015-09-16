@@ -213,11 +213,11 @@ $('.organisatie .dark-box').waypoint(function() {
 $('.veiligheid .play-video').click(function(){
 	$(this).toggleClass('Clicked-Step');
 	var ReadyToggleProgression = parseInt($('.loading-security p b').text());
-	if(ReadyToggleProgression == 100){
+	if(ReadyToggleProgression == 4){
 		console.log('Equals 100% competion');
 		$('.security-loading-container').addClass('activate-upload-progression');
 	}else{
-		console.log('Does not equal 100% completion');
+		console.log('Does not equal 4/4 completion');
 	}
 });
 $('.veiligheid .play-video').click(function(){
@@ -227,8 +227,8 @@ $('.veiligheid .play-video').click(function(){
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
 		$('.loading-security p b').text(loadingStatus+1);
-		var currentElementProgressWidth = $('.loading-security span').width();
-		$('.loading-security span').css('width',  currentElementProgressWidth + 25.40 + '%');
+		var currentElementProgressWidth = loadingStatus * 25;
+		$('.loading-security span').css('width',  currentElementProgressWidth + '%');
 	}
 });
 $('.main-nav a').click(function(){

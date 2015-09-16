@@ -242,7 +242,7 @@ $('.veiligheid .play-video').click(function(){
 		
 			console.log(loadingStatus);
 			$('.loading-security span').css('width',  loadingStatus *25 + '%');
-			EenMaligNogEenkeer = false;
+			EenMaligNogEenkeer = true;
 		}
 		
 	}

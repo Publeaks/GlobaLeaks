@@ -213,37 +213,27 @@ $('.organisatie .dark-box').waypoint(function() {
 $('.veiligheid .play-video').click(function(){
 	$(this).toggleClass('Clicked-Step');
 	var ReadyToggleProgression = parseInt($('.loading-security p b').text());
-	if(ReadyToggleProgression == 4){
+	if(ReadyToggleProgression == 100){
 		console.log('Equals 100% competion');
 		$('.security-loading-container').addClass('activate-upload-progression');
 	}else{
-		console.log('Does not equal 4/4 completion');
+		console.log('Does not equal 100% completion');
 	}
 });
-
-
 $('.veiligheid .play-video').click(function(){
 	if($(this).hasClass('Progression-step')){
 		//do nothing
 	}else{
 		$(this).addClass('Progression-step')
 		var loadingStatus = parseInt($('.loading-security p b').text());
-		$('.loading-security p b').text(loadingStatus + 1);
-		
+		$('.loading-security p b').text(loadingStatus+25);
+		$('.loading-security span').css('width', loadingStatus + 25.40 + '%');
 	}
 });
-
-$('.veiligheid .play-video').click(function(){
-	if($(this).hasClass('Progression-step')){
-		//do nothing
-	}else{
-		console.log(loadingStatus);
-		$('.loading-security span').css('width',  loadingStatus *25 + '%');
-		EenMaligNogEenkeer = true;
-		
-	}
+$('.main-nav a').click(function(){
+	$('.main-nav li').removeClass('active');
+	$(this).parent().addClass('active');
 });
-
 
 $('.main-nav a').click(function(){
 	$('.main-nav li').removeClass('active');

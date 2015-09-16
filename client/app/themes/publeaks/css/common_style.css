@@ -197,7 +197,7 @@ body {
   border-radius: 3px;
   width: 300px;
   height: 50px;
-  background-color: #00e08e;
+  background-color: #25ddb3;
   border: none;
   font-size: 24px;
   color: #fff;
@@ -247,7 +247,7 @@ body {
   border-radius: 3px;
   width: 300px;
   height: 50px;
-  background-color: #00e08e;
+  background-color: #25ddb3;
   border: none;
   font-size: 24px;
   color: #fff;
@@ -297,7 +297,7 @@ body {
   display: block;
 }
 .organisatie article p a {
-  color: #00e08e;
+  color: #25ddb3;
   text-decoration: underline;
 }
 .organisatie .dark-box {
@@ -487,7 +487,7 @@ body {
   display: block;
   height: 81px;
   width: 25%;
-  background-color: #00e08e;
+  background-color: #25ddb3;
   position: absolute;
   top: -1px;
   bottom: -1px;
@@ -643,7 +643,7 @@ body {
   font-style: normal;
 }
 .veiligheid-popup i a {
-  color: #00e08e;
+  color: #25ddb3;
 }
 
 /* End upload security overlay part */

@@ -938,7 +938,7 @@ body {
     font-style: normal;
     cursor:pointer;
 }
-.SubmitBox #SubmitButton{
+#SubmitBox #SubmitButton{
 	    font-size: 24px;
     height: 60px;
     color: #fff;

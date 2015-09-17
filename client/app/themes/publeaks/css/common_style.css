@@ -1069,7 +1069,7 @@ body {
 #SubmissionStepReceiver div .glyphicon{
 	display:none;
 }
-.col-md-offset-1 .col-md-4 .uploadingBox{
+.col-md-offset-1.col-md-4 .uploadingBox{
 	display:none;
 }
 #ReceiptOutputBox #KeyCodeThanks1{
@@ -1087,6 +1087,7 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: #fff;
+    margin-left:15px;
 }
 #ReceiptOutputBox #KeyCodeBox div img{
 	display:none;
@@ -1097,7 +1098,10 @@ body {
 #ReceiptOutputBox #KeyCodeBox div:nth-child(2){
 	display:none;
 }
-#ReceiptOutputBox .ReceiptButton{
+#ReceiptOutputBox #KeyCodeBox div:nth-child(2) div{
+	display:block;
+}
+#ReceiptOutputBox #ReceiptButton{
 	display:none;
 }
 #ReceiptOutputBox #KeyCodeHintBox{

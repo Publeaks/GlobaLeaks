@@ -758,7 +758,7 @@ body {
 .upload-section-container #field-0 .submissionFieldInput,.upload-section-container #field-6 .submissionFieldInput{
 	width:auto !important;
 }
-#step-1{
+#step-1,#step-2{
 	background-color: #fff;
     max-width: 1224px;
     width: 100%;
@@ -928,12 +928,50 @@ body {
     text-transform: uppercase;
     padding: 0px;
     margin: 0px;
-    width: 621px;
+    width: 602px;
     background-color: #9e9e9e;
     border-radius: 3px;
     border: none;
     line-height: 60px;
     font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor:pointer;
+}
+.SubmitBox #SubmitButton{
+	    font-size: 24px;
+    height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    width: 592px;
+    background-color: #9e9e9e;
+    border-radius: 3px;
+    border: none;
+    line-height: 60px;
+    font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+}
+#step-2 .fieldLabel{
+	font-size: 50px;
+    line-height: 30px;
+    font-family: "Maison Neue Light", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #333333;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#step-2 .form-group{
+	padding-top:10px;
+	padding-bottom:75px;
+	font-size:24px;
+	line-height:30px;
+	color:#333333;
+	font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
     font-weight: 300;
     font-style: normal;
 }

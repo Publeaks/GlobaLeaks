@@ -1123,9 +1123,15 @@ body {
     margin-left: 45px;
     margin-top: 50px;
     position:relative;
+    display:block !important;
+}
+#ReceiptOutputBox #KeyCodeBox .col-md-10{
+	
 }
 #ReceiptOutputBox #KeyCodeBox .col-md-10:after{
-	content:'test';
+	content:'Let op! bewaar deze code goed, hij wordt eenmalig verstrekt! 
+Hiermee kunt u inloggen op Updates de pagina.
+Daar kunt u zien of u document in behandeling is genomen.';
 	display:block;
 	width:700px;
 	font-size:24px;

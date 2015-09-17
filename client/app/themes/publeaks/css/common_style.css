@@ -1124,7 +1124,7 @@ body {
     margin-top: 50px;
     position:relative;
 }
-#ReceiptOutputBox #KeyCodeBox div:nth-child(2) .col-md-10:after{
+#ReceiptOutputBox #KeyCodeBox .col-md-10:after{
 	content:'test';
 	display:block;
 	width:700px;

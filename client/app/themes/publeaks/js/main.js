@@ -295,7 +295,7 @@ $('.uploaden').waypoint(function() {
 	offset:'0',
 });
 
-$('.pager a').click(function(){
+$('.pager a').on('click', function(){
 	
 	console.log('Form button clicked');
 	if ( $('#SubmissionTabsNavigationBox li:first-child').is( ".active" ) ) {

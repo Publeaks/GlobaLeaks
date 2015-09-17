@@ -758,7 +758,7 @@ body {
 .upload-section-container #field-0 .submissionFieldInput,.upload-section-container #field-6 .submissionFieldInput{
 	width:auto !important;
 }
-#step-1,#step-2{
+#step-1,#step-2,#SubmissionTabsContentBox{
 	background-color: #fff;
     max-width: 1224px;
     width: 100%;

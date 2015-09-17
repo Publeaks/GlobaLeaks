@@ -790,6 +790,17 @@ body {
 	display:inline-block;
 	vertical-align:top;
 }
+#step-1 .row .col-md-7 div div div:nth-child(7){
+	width:647px;
+	display:inline-block;
+	vertical-align:top;
+}
+#step-1 .row .col-md-7 div div div:nth-child(8){
+	width: 520px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 70px;
+}
 
 .text-red{
 	display:none;
@@ -798,8 +809,11 @@ body {
 #field-1 .submissionFieldInput,#field-3 .submissionFieldInput,#field-5 .submissionFieldInput,#field-6 .submissionFieldInput{
 	padding-left:0px;
 }
-#field-1 label,#field-3 label,#field-5 label,#field-6 label{
+#field-1 label,#field-3 label{
 	padding-left:20px;
+}
+#field-5 label{
+	padding-left:10px;
 }
 #field-1 select,#field-2 select,#field-3 select,#field-4 select{
 	-webkit-appearance: none;
@@ -828,9 +842,16 @@ body {
 	padding-left:30px;
 }
 .upload-section-container #field-5 .submissionFieldInput{
-	display: block;
+	display: block !important;
     padding-left: 0px;
-    width: 1185px;
+    width: 1185px !important;
+}
+#field-5{
+	margin-left:10px;
+}
+#field-6{
+	width:607px !important;
+	margin-left:10px;
 }
 .upload-section-container #field-5 textarea,.upload-section-container #field-6 textarea{
 	overflow: hidden;
@@ -855,6 +876,47 @@ body {
 .upload-section-container #field-6 textarea{
 	width:600px;
 }
-.upload-section-container #field-6 .fieldLabel,.upload-section-container #field-5 .fieldLabel,.upload-section-container #field-4 .fieldLabel,.upload-section-container #field-3 .fieldLabel,.upload-section-container #field-2 .fieldLabel,.upload-section-container #field-1 .fieldLabel{
+.upload-section-container #field-7 .fieldLabel,.upload-section-container #field-6 .fieldLabel,.upload-section-container #field-5 .fieldLabel,.upload-section-container #field-4 .fieldLabel,.upload-section-container #field-3 .fieldLabel,.upload-section-container #field-2 .fieldLabel,.upload-section-container #field-1 .fieldLabel{
 	margin-bottom: -20px;
+}
+.upload-section-container #field-7 .FieldDescription{
+	width:330px;
+	margin-top:100px;
+}
+#field-7 .submissionFieldInput{
+	width: 542px !important;
+    position: absolute;
+    left: -3px;
+    top: 40px;
+}
+#field-7 .fileinput-button{
+	background-color:#25ddb3;
+	border:none;
+	padding:0px;
+	font-size:18px;
+	height:50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: 500px;
+    padding: 0px;
+    position:relative;
+
+}
+#field-7 .fileinput-button:after{
+	position:absolute;
+	display:block;
+	content:'VOEG EEN BESTAND TOE';
+	height:50px;
+	width:500px;
+	top:0px;
+	left:0px;
+	text-align:center;
+	line-height:50px;
+
+}
+#field-7 .fileinput-button i{
+	display:none;
+}
+#field-7 .fileinput-button span{
+	display:none;
 }

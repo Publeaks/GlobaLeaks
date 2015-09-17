@@ -1024,9 +1024,9 @@ body {
 
 
 }
-.receiverCard.selected{
+#SubmissionStepReceiver div .receiverCard.selected{
 	background-color:#fff;
-	border: 2px solid #25ddb3;
+	border: 2px solid #25ddb3 !important;
 }
 #SubmissionStepReceiver div .receiverCardTitle{
     width: 130px;

@@ -138,7 +138,7 @@ $( document ).ready(function() {
 
 
 
-$('.video-overlay').click(function(){
+$('.video-overlay,#intro').click(function(){
 	$('.intro-video').addClass('video-active-focus');
 	$('body').css("overflow", "hidden");
 	$('.main-intro-video').prop('muted', false);

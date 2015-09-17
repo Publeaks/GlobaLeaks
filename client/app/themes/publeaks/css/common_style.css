@@ -879,6 +879,10 @@ body {
 .upload-section-container #field-7 .fieldLabel,.upload-section-container #field-6 .fieldLabel,.upload-section-container #field-5 .fieldLabel,.upload-section-container #field-4 .fieldLabel,.upload-section-container #field-3 .fieldLabel,.upload-section-container #field-2 .fieldLabel,.upload-section-container #field-1 .fieldLabel{
 	margin-bottom: -20px;
 }
+.upload-section-container #field-4 .fieldlabel{
+	    margin-bottom: -20px;
+    margin-top: 5px;
+}
 .upload-section-container #field-7 .FieldDescription{
 	width:330px !important;
 	margin-top:100px;
@@ -974,4 +978,10 @@ body {
 	font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+#SubmissionStepReceiver div{
+	width:132px;
+	height:132px;
+	display:inline-block;
+	vertical-align:top;
 }

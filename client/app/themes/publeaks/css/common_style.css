@@ -1098,7 +1098,7 @@ body {
 #ReceiptOutputBox #KeyCodeBox div:nth-child(2){
 	display:none;
 }
-#ReceiptOutputBox #KeyCodeBox div:nth-child(2) .col-md-10{
+#ReceiptOutputBox #KeyCodeBox .col-md-10{
 	display:block !important;
 }
 #ReceiptOutputBox #ReceiptButton{

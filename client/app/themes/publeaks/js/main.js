@@ -339,7 +339,7 @@ function redirectIfOnTor(url, test_url) {
 
   checkTor(yes_cb, undefined, test_url);
 }
-#('#StepsNavBar a').click(function(){
+$('#StepsNavBar a').click(function(){
 	
 	if ( $('#SubmissionTabsNavigationBox li:first-child').is( ".active" ) ) {
  

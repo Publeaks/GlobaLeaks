@@ -1032,6 +1032,7 @@ body {
     height: 130px;
     margin: 0px;
 	padding:0px;
+	overflow:hidden;
 
 }
 #SubmissionStepReceiver div .receiverCardTitle label{
@@ -1067,6 +1068,12 @@ body {
 #SubmissionStepReceiver div .col-md-1 div{
 	height:50px;
 	width:50px;
+	display:none;
 
-
+}
+#SubmissionStepReceiver div .glyphicon{
+	display:none;
+}
+#SubmissionStepReceiver .col-md-offset-1{
+	display:none;
 }

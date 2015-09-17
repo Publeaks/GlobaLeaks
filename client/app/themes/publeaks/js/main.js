@@ -295,10 +295,7 @@ $('.uploaden').waypoint(function() {
 	offset:'0',
 });
 
-$('.pager a').on('click', function(){
-	
-	console.log('Form button clicked');
-	if ( $('#SubmissionTabsNavigationBox li:first-child').is( ".active" ) ) {
+if ( $('#SubmissionTabsNavigationBox li:first-child').is( ".active" ) ) {
  
 	    $('.receipt-deel').hide();
 	    $('.stap-2').hide();
@@ -306,27 +303,24 @@ $('.pager a').on('click', function(){
 	    $('.stap-2-header').addClass('active');
 		console.log('First active');
 	}
-	if ( $('#SubmissionTabsNavigationBox li:nth-child(2)').is( ".active" ) ) {
- 
-	    $('.receipt-deel').hide();
-	    $('.stap-3').hide();
-	    $('.stap-2').show();
-	    $('.uploaden header ul li').removeClass('active');
-	    $('.stap-3-header').addClass('active');
-		console.log('Second active');
-	}
-	if ( $('#SubmissionTabsNavigationBox li:nth-child(3)').is( ".active" ) ) {
- 
-		$('.stap-3').hide();
-	    $('.stap-2').hide();
-	    $('.receipt-deel').show();
-	    $('.uploaden header ul li').removeClass('active');
-	    $('.stap-4-header').addClass('active');
-		console.log('Third active');
-	}
-	
-	
-});  
+if ( $('#SubmissionTabsNavigationBox li:nth-child(2)').is( ".active" ) ) {
+
+    $('.receipt-deel').hide();
+    $('.stap-3').hide();
+    $('.stap-2').show();
+    $('.uploaden header ul li').removeClass('active');
+    $('.stap-3-header').addClass('active');
+	console.log('Second active');
+}
+if ( $('#SubmissionTabsNavigationBox li:nth-child(3)').is( ".active" ) ) {
+
+	$('.stap-3').hide();
+    $('.stap-2').hide();
+    $('.receipt-deel').show();
+    $('.uploaden header ul li').removeClass('active');
+    $('.stap-4-header').addClass('active');
+	console.log('Third active');
+} 
     
     
     

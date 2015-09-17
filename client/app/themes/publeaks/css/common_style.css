@@ -1069,7 +1069,7 @@ body {
 #SubmissionStepReceiver div .glyphicon{
 	display:none;
 }
-.col-md-offset-1.col-md-4 .uploadingBox{
+.col-md-offset-1 .uploadingBox{
 	display:none;
 }
 #ReceiptOutputBox #KeyCodeThanks1{
@@ -1098,8 +1098,8 @@ body {
 #ReceiptOutputBox #KeyCodeBox div:nth-child(2){
 	display:none;
 }
-#ReceiptOutputBox #KeyCodeBox div:nth-child(2) div{
-	display:block;
+#ReceiptOutputBox #KeyCodeBox div:nth-child(2) .col-md-10{
+	display:block !important;
 }
 #ReceiptOutputBox #ReceiptButton{
 	display:none;
@@ -1124,10 +1124,8 @@ body {
     margin-top: 50px;
     position:relative;
 }
-#ReceiptOutputBox #KeyCode:after{
-	content:'Let op! bewaar deze code goed, hij wordt eenmalig verstrekt! 
-Hiermee kunt u inloggen op Updates de pagina.
-Daar kunt u zien of u document in behandeling is genomen.';
+#ReceiptOutputBox #KeyCodeBox div:nth-child(2) .col-md-10:after{
+	content:'test';
 	display:block;
 	width:700px;
 	font-size:24px;

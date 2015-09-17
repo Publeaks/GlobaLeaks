@@ -339,8 +339,37 @@ function redirectIfOnTor(url, test_url) {
 
   checkTor(yes_cb, undefined, test_url);
 }
-    
-    
+#('#StepsNavBar a').click(function(){
+	
+	if ( $('#SubmissionTabsNavigationBox li:first-child').is( ".active" ) ) {
+ 
+	    $('.receipt-deel').hide();
+	    $('.stap-2').hide();
+	    $('.uploaden header ul li').removeClass('active');
+	    $('.stap-2-header').addClass('active');
+	 
+	}
+	if ( $('#SubmissionTabsNavigationBox li:nth-child(2)').is( ".active" ) ) {
+ 
+	    $('.receipt-deel').hide();
+	    $('.stap-3').hide();
+	    $('.stap-2').show();
+	    $('.uploaden header ul li').removeClass('active');
+	    $('.stap-3-header').addClass('active');
+	 
+	}
+	if ( $('#SubmissionTabsNavigationBox li:nth-child(3)').is( ".active" ) ) {
+ 
+		$('.stap-3').hide();
+	    $('.stap-2').hide();
+	    $('.receipt-deel').show();
+	    $('.uploaden header ul li').removeClass('active');
+	    $('.stap-4-header').addClass('active');
+	 
+	}
+	
+	
+});  
     
     
     

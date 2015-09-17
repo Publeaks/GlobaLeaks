@@ -880,14 +880,15 @@ body {
 	margin-bottom: -20px;
 }
 .upload-section-container #field-7 .FieldDescription{
-	width:330px;
+	width:330px !important;
 	margin-top:100px;
+	margin-left:3px;
 }
 #field-7 .submissionFieldInput{
 	width: 542px !important;
     position: absolute;
-    left: -3px;
-    top: 40px;
+    left: 3px;
+    top: 30px;
 }
 #field-7 .fileinput-button{
 	background-color:#25ddb3;
@@ -919,4 +920,20 @@ body {
 }
 #field-7 .fileinput-button span{
 	display:none;
+}
+#PreviousStepButton,#NextStepButton{
+	font-size: 24px;
+    height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    width: 621px;
+    background-color: #9e9e9e;
+    border-radius: 3px;
+    border: none;
+    line-height: 60px;
+    font-family: "Maison Neue Book", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }

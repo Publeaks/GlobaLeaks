@@ -128,7 +128,7 @@ $( document ).ready(function() {
 
 	var mainVideo = document.getElementById('main-intro-video');
 	var PausedMainVideoTime;
-	var StartVideoPos = 11.014395;
+	//var StartVideoPos = 11.014395;
 
 
 
@@ -159,7 +159,7 @@ $('.close-video-intro').click(function(){
 	$('.main-intro-video').prop('muted', true);
 	PausedMainVideoTime = mainVideo.currentTime;
 	console.log(PausedMainVideoTime);
-	mainVideo.currentTime = StartVideoPos;
+	mainVideo.currentTime = PausedMainVideoTime;
 	mainVideo.pause();
 });
 $('.intro-video video').click(function(){
@@ -168,7 +168,7 @@ $('.intro-video video').click(function(){
 	$('.main-intro-video').prop('muted', true);
 	PausedMainVideoTime = mainVideo.currentTime;
 	console.log(PausedMainVideoTime);
-	mainVideo.currentTime = StartVideoPos;
+	mainVideo.currentTime = PausedMainVideoTime;
 	mainVideo.pause();
 });
 

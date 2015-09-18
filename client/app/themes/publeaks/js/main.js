@@ -118,11 +118,6 @@ $(document).on('click', '.third-form-part', function(){
 
 /* new js */
 
-document.getElementById('main-intro-video').addEventListener('loadedmetadata', function() {
-	  this.currentTime = 11.014395;
-	}, false);
-
-
 $( document ).ready(function() {
     
     

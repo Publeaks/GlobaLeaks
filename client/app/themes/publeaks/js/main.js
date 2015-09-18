@@ -289,41 +289,48 @@ $('.uploaden').waypoint(function() {
 },{
 	offset:'0',
 });
-//$('.upload-section-container').on(eventName, dynamicChild, function() {});
+//$('.upload-section-container').on('click', '#SubmissionTabsNavigationBox li:first-child', function() {});
 
 
-if ( $('#SubmissionTabsNavigationBox li:first-child').hasClass( ".active" ) ) {
+//$('#SubmissionTabsNavigationBox li:first-child').click(){}
+
+$('.upload-section-container').on('click', '#SubmissionTabsNavigationBox li', function() {
+	if ( $('#SubmissionTabsNavigationBox li:first-child').hasClass( ".active" ) ) {
  
-    $('.receipt-deel').hide();
-    $('.stap-2').hide();
-    $('.uploaden header ul li').removeClass('active');
-    $('.stap-2-header').addClass('active');
-	console.log('First active');
-}else{
+	    $('.receipt-deel').hide();
+	    $('.stap-2').hide();
+	    $('.uploaden header ul li').removeClass('active');
+	    $('.stap-2-header').addClass('active');
+		console.log('First active');
+	}else{
+		
+	};
+	if ( $('#SubmissionTabsNavigationBox li:nth-child(2)').hasClass( ".active" ) ) {
 	
-};
-if ( $('#SubmissionTabsNavigationBox li:nth-child(2)').hasClass( ".active" ) ) {
+	    $('.receipt-deel').hide();
+	    $('.stap-3').hide();
+	    $('.stap-2').show();
+	    $('.uploaden header ul li').removeClass('active');
+	    $('.stap-3-header').addClass('active');
+		console.log('Second active');
+	}else{
+		
+	};
+	if ( $('#SubmissionTabsNavigationBox li:nth-child(3)').hasClass( ".active" ) ) {
+	
+		$('.stap-3').hide();
+	    $('.stap-2').hide();
+	    $('.receipt-deel').show();
+	    $('.uploaden header ul li').removeClass('active');
+	    $('.stap-4-header').addClass('active');
+		console.log('Third active');
+	}else{
+		
+	};
+	
+	
+});
 
-    $('.receipt-deel').hide();
-    $('.stap-3').hide();
-    $('.stap-2').show();
-    $('.uploaden header ul li').removeClass('active');
-    $('.stap-3-header').addClass('active');
-	console.log('Second active');
-}else{
-	
-};
-if ( $('#SubmissionTabsNavigationBox li:nth-child(3)').hasClass( ".active" ) ) {
-
-	$('.stap-3').hide();
-    $('.stap-2').hide();
-    $('.receipt-deel').show();
-    $('.uploaden header ul li').removeClass('active');
-    $('.stap-4-header').addClass('active');
-	console.log('Third active');
-}else{
-	
-};
     
     
     

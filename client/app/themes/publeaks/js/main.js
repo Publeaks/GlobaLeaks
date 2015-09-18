@@ -160,7 +160,7 @@ $('.close-video-intro').click(function(){
 	PausedMainVideoTime = mainVideo.currentTime;
 	console.log(PausedMainVideoTime);
 	mainVideo.currentTime = PausedMainVideoTime;
-	mainVideo.pause();
+	mainVideo.play();
 });
 $('.intro-video video').click(function(){
 	$('.intro-video').removeClass('video-active-focus');
@@ -169,7 +169,7 @@ $('.intro-video video').click(function(){
 	PausedMainVideoTime = mainVideo.currentTime;
 	console.log(PausedMainVideoTime);
 	mainVideo.currentTime = PausedMainVideoTime;
-	mainVideo.pause();
+	mainVideo.play();
 });
 
 
@@ -289,10 +289,7 @@ $('.uploaden').waypoint(function() {
 },{
 	offset:'0',
 });
-//$('.upload-section-container').on('click', '#SubmissionTabsNavigationBox li:first-child', function() {});
 
-
-//$('#SubmissionTabsNavigationBox li:first-child').click(){}
 
 $('.upload-section-container').on('click', '#SubmissionTabsNavigationBox li', function() {
 	if ( $('#SubmissionTabsNavigationBox li:first-child').hasClass( ".active" ) ) {
@@ -330,6 +327,8 @@ $('.upload-section-container').on('click', '#SubmissionTabsNavigationBox li', fu
 	
 	
 });
+
+
 
     
     

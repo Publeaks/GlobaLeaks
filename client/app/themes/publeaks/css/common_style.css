@@ -1142,3 +1142,6 @@ Daar kunt u zien of u document in behandeling is genomen.';
     font-style: normal;
     color:#333333;
 }
+#SubmissionTabsNavigationBox li:first-child{
+	background-color:black;
+}

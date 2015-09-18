@@ -289,6 +289,8 @@ $('.uploaden').waypoint(function() {
 },{
 	offset:'0',
 });
+//$('.upload-section-container').on(eventName, dynamicChild, function() {});
+
 
 if ( $('#SubmissionTabsNavigationBox li:first-child').hasClass( ".active" ) ) {
  

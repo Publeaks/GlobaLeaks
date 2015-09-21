@@ -190,7 +190,7 @@ $('.technologie-video-box .play-video').click(function(){
 	
 	SmallVideoTechnologie.play();
 })
-$('.technologie-video-box video,.proces-video-box .close-video').click(function(){
+$('.technologie-video-box video,.technologie-video-box .close-video').click(function(){
 	
 	SmallVideoTechnologie.pause();
 })
@@ -199,7 +199,7 @@ $('.omgeving-video-box .play-video').click(function(){
 	
 	SmallVideoOmgeving.play();
 })
-$('.omgeving-video-box video,.proces-video-box .close-video').click(function(){
+$('.omgeving-video-box video,.omgeving-video-box .close-video').click(function(){
 	
 	SmallVideoOmgeving.pause();
 })

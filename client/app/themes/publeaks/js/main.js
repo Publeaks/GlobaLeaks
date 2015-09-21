@@ -172,6 +172,10 @@ $('.intro-video video').click(function(){
 	mainVideo.play();
 });
 
+$('.veiligheid .play-video').click(function(){
+	$(this).find('small-video').play();
+})
+
 
 
 

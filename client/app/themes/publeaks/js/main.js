@@ -172,8 +172,36 @@ $('.intro-video video').click(function(){
 	mainVideo.play();
 });
 
-$('.veiligheid .play-video').click(function(){
-	$(this).find('small-video').play();
+var SmallVideoProces = 		document.getElementById('small-intro-video-1');
+var SmallVideoTechnologie = document.getElementById('small-intro-video-2');
+var SmallVideoOmgeving = 	document.getElementById('small-intro-video-3');
+
+
+$('.proces-video-box .play-video').click(function(){
+	
+	SmallVideoProces.play();
+})
+$('.proces-video-box video,.proces-video-box .close-video').click(function(){
+	
+	SmallVideoProces.pause();
+})
+
+$('.proces-video-box .play-video').click(function(){
+	
+	SmallVideoTechnologie.play();
+})
+$('.proces-video-box video,.proces-video-box .close-video').click(function(){
+	
+	SmallVideoTechnologie.pause();
+})
+
+$('.proces-video-box .play-video').click(function(){
+	
+	SmallVideoOmgeving.play();
+})
+$('.proces-video-box video,.proces-video-box .close-video').click(function(){
+	
+	SmallVideoOmgeving.pause();
 })
 
 

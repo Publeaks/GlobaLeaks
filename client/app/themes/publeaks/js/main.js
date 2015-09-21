@@ -186,20 +186,20 @@ $('.proces-video-box video,.proces-video-box .close-video').click(function(){
 	SmallVideoProces.pause();
 })
 
-$('.proces-video-box .play-video').click(function(){
+$('.technologie-video-box .play-video').click(function(){
 	
 	SmallVideoTechnologie.play();
 })
-$('.proces-video-box video,.proces-video-box .close-video').click(function(){
+$('.technologie-video-box video,.proces-video-box .close-video').click(function(){
 	
 	SmallVideoTechnologie.pause();
 })
 
-$('.proces-video-box .play-video').click(function(){
+$('.omgeving-video-box .play-video').click(function(){
 	
 	SmallVideoOmgeving.play();
 })
-$('.proces-video-box video,.proces-video-box .close-video').click(function(){
+$('.omgeving-video-box video,.proces-video-box .close-video').click(function(){
 	
 	SmallVideoOmgeving.pause();
 })

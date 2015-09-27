@@ -1164,6 +1164,11 @@ Daar kunt u zien of u document in behandeling is genomen.';
     color: #9e9e9e;
     text-transform: uppercase;
     line-height: 60px;
+    font-family: "Maison Neue Light", Calibri, Arial, Roboto, sans-serif;
+    border:none;
+    margin:0px;
+    border:none;
+    padding:0px;
 }
 #SubmissionTabsNavigationBox li.active{
 	background-color: #9e9e9e;

@@ -1203,4 +1203,5 @@ Daar kunt u zien of u document in behandeling is genomen.';
 	right:0px;
 	width:100vw;
 	height:100vh;
+	z-index:999;
 }

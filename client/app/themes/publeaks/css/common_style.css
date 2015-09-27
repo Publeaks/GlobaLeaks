@@ -238,6 +238,12 @@ body {
   opacity: 1;
   transition: opacity linear 0.3s;
 }
+.main-nav.cloned span a{
+  opacity: 1;
+  transition: opacity linear 0.3s;
+  color:#9e9e9e;
+}
+
 
 /* -------------------------------- begin main container -------------------------------------*/
 .main-container {

@@ -579,12 +579,9 @@ body {
 
 
 
-@media screen and (max-width: 1390px) {
+@media screen and (min-width: 1390px) {
     .organisatie .dark-box{
 		width: 39.5%;
-		display: inline-block;
-		vertical-align: top;
-		position: relative;
 		height: 600px;
 		margin: 1% 0px;
 		padding: 5%;

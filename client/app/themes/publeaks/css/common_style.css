@@ -1222,6 +1222,9 @@ Daar kunt u zien of u document in behandeling is genomen.';
 	color:#000;
 	cursor:pointer;
 }
+.check-updates-overlay-container .main-nav span a{
+	color:#000;
+}
 
 .check-updates-overlay-container #HomePageBoxHeader{
 	display:none;

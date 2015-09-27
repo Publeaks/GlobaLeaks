@@ -1169,6 +1169,7 @@ Daar kunt u zien of u document in behandeling is genomen.';
     margin:0px;
     border:none;
     padding:0px;
+    height:60px;
 }
 #SubmissionTabsNavigationBox li.active{
 	background-color: #9e9e9e;

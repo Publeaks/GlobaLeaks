@@ -575,6 +575,39 @@ body {
   display: block;
 }
 
+
+
+
+
+@media screen and (max-width: 1390px) {
+    .organisatie .dark-box{
+		width: 39.5%;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		height: 600px;
+		margin: 1% 0px;
+		padding: 5%;
+	}
+	.organisatie .dark-box h5{
+		font-size:60px;
+		line-height:70px;
+	}
+	.organisatie .dark-box span{
+		font-size:400px;
+	}
+	.waarom-delen article ul li {
+		display: inline-block;
+	    vertical-align: top;
+	    width: 32%;
+	    margin-right: 1%;
+	}
+	.waarom-delen article ul li img{
+		width:100%;
+	}
+}
+
+
 /* END security progression part */
 /* Upload security overlay part */
 .veiligheid-popup {
@@ -1294,33 +1327,4 @@ Daar kunt u zien of u document in behandeling is genomen.';
 }
 .check-updates-overlay-container .row:last-child .col-md-6 textarea{
 	width:98% !important;
-}
-
-
-@media screen and (max-width: 1390px) {
-    .organisatie .dark-box{
-		width: 39.5%;
-		display: inline-block;
-		vertical-align: top;
-		position: relative;
-		height: 600px;
-		margin: 1% 0px;
-		padding: 5%;
-	}
-	.organisatie .dark-box h5{
-		font-size:60px;
-		line-height:70px;
-	}
-	.organisatie .dark-box span{
-		font-size:400px;
-	}
-	.waarom-delen article ul li {
-		display: inline-block;
-	    vertical-align: top;
-	    width: 32%;
-	    margin-right: 1%;
-	}
-	.waarom-delen article ul li img{
-		width:100%;
-	}
 }

@@ -1205,10 +1205,11 @@ Daar kunt u zien of u document in behandeling is genomen.';
 	left:0px;
 	right:0px;
 	width:100vw;
-	height:100vh;
+	height:100%;
 	z-index:999;
 	background-color:#eeeeee;
 	display:none;
+	overflow:scroll;
 }
 
 .check-updates-overlay-container .main-nav{
@@ -1269,9 +1270,22 @@ Daar kunt u zien of u document in behandeling is genomen.';
 }
 .check-updates-overlay-container .input-group-btn{
 	display:block !important;
-.check-updates-overlay-container{
-	
+.check-updates-overlay-container .row{
+	    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
 }
-.check-updates-overlay-container{
-	
+.check-updates-overlay-container .col-md-6{
+	width:48%;
+}
+.check-updates-overlay-container .col-md-12{
+	margin-top:-60px;
+	width:96%;
+}
+.check-updates-overlay-container .row:last-child .col-md-6{
+	width:96%;
+	margin-top:-60px;
+}
+.check-updates-overlay-container .row:last-child .col-md-6 textarea{
+	width:98% !important;
 }

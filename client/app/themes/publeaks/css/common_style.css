@@ -280,6 +280,9 @@ body {
   line-height: 50px;
   cursor:pointer;
 }
+.main-container .check-document span a{
+	color:#9e9e9e;
+}
 
 .intro {
   height: 700px;

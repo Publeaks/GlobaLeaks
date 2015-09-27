@@ -834,6 +834,21 @@ body {
 	font-weight: 300;
 	font-style: normal;
     margin-top: -30px;
+    position:relative;
+}
+#field-1 select:after,#field-2 select:after,#field-3 select:after,#field-4 select:after{
+	content:'';
+	position:absolute;
+	top:50%;
+	margin-top:-5px;
+	right:30px;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	
+	border-top: 10px solid #000;
+}
 }
 #field-2,#field-4{
     padding-left: 70px;

@@ -579,7 +579,7 @@ body {
 
 
 
-@media screen and (min-width: 1390px) {
+@media screen and (max-width: 1390px) {
     .organisatie .dark-box{
 		width: 39.5%;
 		height: 600px;

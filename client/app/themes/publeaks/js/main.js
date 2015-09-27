@@ -209,9 +209,9 @@ $('.uploaden').waypoint(function() {
 	offset:'0',
 });
 
-
-$
-
+$('.check-document span, .close-container-overlay-tip').click(function(){
+	$('.check-updates-overlay-container').fadeToggle();
+});
 
     
     

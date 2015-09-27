@@ -1297,10 +1297,8 @@ Daar kunt u zien of u document in behandeling is genomen.';
 }
 
 
-
-
-@media (max-width: 1390px) {
-	.organisatie .dark-box{
+@media screen and (max-width: 1390px) {
+    .organisatie .dark-box{
 		width: 39.5%;
 		display: inline-block;
 		vertical-align: top;

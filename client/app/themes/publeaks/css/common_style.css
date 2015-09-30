@@ -792,8 +792,9 @@ body {
 	width:100%;
 }
 .upload-section-container #field-0 .submissionFieldInput .submissionFieldInput div div{
-	padding-right:45px;
+	padding-right:10px;
 	width:auto !important;
+	display:inline-block !important;
 }
 .upload-section-container #field-0 .submissionFieldInput,.upload-section-container #field-6 .submissionFieldInput{
 	width:auto !important;

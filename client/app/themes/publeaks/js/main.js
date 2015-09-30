@@ -209,7 +209,7 @@ $('.uploaden').waypoint(function() {
 	offset:'0',
 });
 
-$('.check-document span, .close-container-overlay-tip').click(function(){
+$('.check-document span, .close-container-overlay-tip,.main-nav.cloned span a').click(function(){
 	$('.check-updates-overlay-container').fadeToggle();
 	$('.upload-section-container').fadeToggle();
 });

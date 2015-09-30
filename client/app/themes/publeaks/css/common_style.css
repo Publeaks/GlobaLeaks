@@ -822,20 +822,20 @@ body {
 }
 #step-1 .row .col-md-7 div div div:nth-child(4){
 	width:560px;
-	display:inline-block;
+	display:block;
 	vertical-align:top;
 }
 #step-1 .row .col-md-7 div div div:nth-child(5){
 	width:560px;
-	display:inline-block;
+	display:block;
 	vertical-align:top;
 }
-#step-1 .row .col-md-7 div div div:nth-child(7){
+#step-1 .row .col-md-7 div div div:nth-child(6){
 	width:647px;
 	display:inline-block;
 	vertical-align:top;
 }
-#step-1 .row .col-md-7 div div div:nth-child(8){
+#step-1 .row .col-md-7 div div div:nth-child(7){
 	width: 520px;
     display: inline-block;
     vertical-align: top;
@@ -887,6 +887,9 @@ body {
 	border-right: 10px solid transparent;
 	
 	border-top: 10px solid #000;
+}
+#field-4,#field-3{
+	display:block;
 }
 }
 #field-2,#field-4{

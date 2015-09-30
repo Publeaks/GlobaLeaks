@@ -211,6 +211,7 @@ $('.uploaden').waypoint(function() {
 
 $('.check-document span, .close-container-overlay-tip').click(function(){
 	$('.check-updates-overlay-container').fadeToggle();
+	$('.upload-section-container').fadeToggle();
 });
 
     

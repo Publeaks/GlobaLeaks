@@ -234,6 +234,10 @@ body {
   transition: opacity linear 0.3s;
   margin-right:30px;
 }
+.main-nav.cloned button a{
+ color:#fff;
+}
+
 .main-nav.cloned span {
   opacity: 1;
   transition: opacity linear 0.3s;

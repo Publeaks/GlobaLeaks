@@ -757,7 +757,7 @@ body {
   width: 50%;
   padding-bottom: 50px;
 }
-.upload-section-container .container-fluid{
+/*.upload-section-container .container-fluid{
 	padding:0px;
 }
 .upload-section-container .fieldLabel{
@@ -1204,6 +1204,11 @@ Daar kunt u zien of u document in behandeling is genomen.';
     font-style: normal;
     color:#333333;
 }
+*/
+
+
+
+
 /*#SubmissionTabsNavigationBox li:first-child{
 	background-color:black;
 }*/

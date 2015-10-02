@@ -60,6 +60,9 @@
     </div>
   </div>
   <div data-ng-switch-when="tos">
+	  <section class="tos-step-header">
+		<h3>Algemene voorwaarden</h3>
+	</section>
     <div class="form-group preformatted" data-ng-click="entry['value'] = !entry['value']">{{::field.attrs.clause.value}}</div>
     <div class="checkbox" data-ng-class="{'has-error': f['input-' + $index].$error.required}">
       <label>

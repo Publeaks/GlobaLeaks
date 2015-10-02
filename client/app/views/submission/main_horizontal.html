@@ -23,15 +23,11 @@
     <div data-ng-repeat="step in  submission.context.steps | orderBy:'presentation_order'" data-ng-controller="SubmissionStepCtrl">
       <div id="step-{{$index + 1}}" class="SubmissionStep" data-ng-show="submission_step_stage == $index + 1">
         <div class="preformatted" data-ng-if="step.description">{{step.description}}</div>
-        <div class="row">
-          <div class="col-md-7">
             <div data-ng-include="'views/submission/form.html'"></div>
           </div>
           <div class="col-md-offset-1 col-md-4">
             <div data-ng-include="'views/partials/fileupload_status.html'"></div>
           </div>
-        </div>
-      </div>
     </div>
     <!-- / Configured Context Steps -->
 
@@ -45,12 +41,12 @@
     <ul class="pager">
       <li data-ng-class="{disabled: uploading}" class="SubmissionNavButton previous" data-ng-if="hasPreviousStep()">
         <a id="PreviousStepButton" data-ng-click="decrementStep()">
-          <span data-translate>Previous Step</span>
+          <span data-translate>Vorige stap</span>
         </a>
       </li>
       <li data-ng-class="{disabled: uploading}" class="SubmissionNavButton next" data-ng-if="hasNextStep()">
         <a id="NextStepButton" data-ng-click="incrementStep()">
-          <span data-translate>Next Step</span>
+          <span data-translate>Volgende stap</span>
         </a>
       </li>
     </ul>
@@ -59,7 +55,7 @@
     <button id="SubmitButton" class="btn btn-success" data-ng-click="completeSubmission()" data-ng-disabled="submission.isDisabled() || isUploading() || submissionForm.$invalid" type="submit">
       <i data-ng-show="submission.wait" id="SubmitIconWait" class="glyphicon glyphicon-time"></i>
       <i data-ng-hide="submission.wait" id="SubmitIconOK" class="glyphicon glyphicon-ok"></i>
-      <span data-translate>Submit</span>
+      <span data-translate>Verstuur</span>
       <span data-ng-show="submission.wait">({{submission.countdown}})</span>
     </button>
   </div>

@@ -7,20 +7,18 @@
   <div id="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
     <div id="receiver-{{$index}}" class="{{['receiverCard col-md-5', 'receiverCard col-md-5 col-md-offset-1'][$index % 2]}}" data-ng-class="{selected: submission.receivers_selected[receiver.id], disabled: receiver.configuration === 'unselectable' || (!node.allow_unencrypted && receiver.pgp_key_status === 'disabled')}" data-ng-click="switch_selection(receiver)">
       <div class="row receiverCardTitle">
-        <div class="col-md-10">
-          <label>
-            <span data-ng-if="receiver.configuration !== 'unselectable' && receiver.pgp_key_status === 'enabled'">
-              <i class="glyphicon glyphicon-certificate" popover="{{'This receiver has configured the encryption key.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
-            </span>
-            <span data-ng-if="receiver.configuration !== 'unselectable' && receiver.pgp_key_status === 'disabled'">
-              <i class="glyphicon glyphicon-warning-sign" popover="{{'This receiver has not configured the encryption key.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
-            </span>
-            <span data-ng-if="receiver.configuration === 'unselectable'">
-              <i class="glyphicon glyphicon-ban-circle" popover="{{'This receiver is still not enabled to receive submissions.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
-            </span>
-            <span>&nbsp;{{::receiver.name}}</span>
-          </label>
-        </div>
+			<label>
+				<span data-ng-if="receiver.configuration !== 'unselectable' && receiver.pgp_key_status === 'enabled'">
+					<i class="glyphicon glyphicon-certificate" popover="{{'This receiver has configured the encryption key.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
+				</span>
+				<span data-ng-if="receiver.configuration !== 'unselectable' && receiver.pgp_key_status === 'disabled'">
+					<i class="glyphicon glyphicon-warning-sign" popover="{{'This receiver has not configured the encryption key.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
+				</span>
+				<span data-ng-if="receiver.configuration === 'unselectable'">
+					<i class="glyphicon glyphicon-ban-circle" popover="{{'This receiver is still not enabled to receive submissions.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
+				</span>
+				<span class="receiver-name-label">&nbsp;{{::receiver.name}}</span>
+			</label>
         <div class="col-md-1" data-ng-if="receiver.pgp_key_status === 'enabled' || node.allow_unencrypted">
           <div data-ng-if="submission.receivers_selected[receiver.id]">
             <div data-ng-if="receiver.configuration === 'default'">
@@ -40,17 +38,26 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img data-ng-src="static/{{::receiver.id}}.png" class="img-thumbnail">
-        </div>
-        <div class="col-md-offset-1 col-md-6">
-          <p>{{::receiver.description}}</p>
-        </div>
-      </div>
+        <figure>
+        	<img data-ng-src="static/{{::receiver.id}}.png" class="img-thumbnail">
+        </figure>
+        <article class="receiver-description-selection">
+	        <p>{{::receiver.description}}</p>
+        </article>
     </div>
     <div class="clearfix" data-ng-if="$index % 2"></div>
   </div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
   <div id="ReceiverSelectionBoxSmall" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="submission.context.show_small_cards">
     <div class="form-group col-md-3">
       <div id="receiver-{{$index}}" class="receiverCard" data-ng-class="{selected: submission.receivers_selected[receiver.id], disabled: receiver.configuration === 'unselectable' || (!node.allow_unencrypted && receiver.pgp_key_status === 'disabled')}" data-ng-click="switch_selection(receiver)">
@@ -88,11 +95,9 @@
             </div>
               </div>
             </div>
-        <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 receiver-image-container">
             <img data-ng-src="static/{{::receiver.id}}.png" class="img-thumbnail">
           </div>
-        </div>
       </div>
     </div>
     <div class="clearfix" data-ng-if="!(($index + 1) % 4)"></div>

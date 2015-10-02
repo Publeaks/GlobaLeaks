@@ -1,7 +1,7 @@
-<section class="form-step-header">
-	<h3>Document uploaden</h3>
-</section>
 <div data-ng-if="::fieldsLevel==-1">
+	<section class="form-step-header">
+		<h3>Document uploaden</h3>
+	</section>
   <div data-ng-repeat="field in fields | orderBy:['y', 'x']" class="fieldsRow row">
     <div data-ng-init="fieldId = 'field-' + $index" class="col-md-12">
       <div data-ng-include="'views/submission/form_field.html'"></div>

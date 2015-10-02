@@ -2,14 +2,11 @@
 	<section class="submission-receiver-cards-header">
 		<h3>Selecteer een mediapartner</h3>
 		<p>Textje over selecteren van mediapartner</p>
-		<h4>Pers (nog max <b>3</b> selecteren)</h4>
+		<div data-ng-if="submission.context.maximum_selectable_receivers !== 0 && !submission.context.select_all_receivers" id="MaxSelectableReceiverBox" class="clearfix">
+			<div><span data-translate>Pers <b>(nog max {{::submission.context.maximum_selectable_receivers}} selecteren)</b></span></div>
+			<div><span data-translate>U heeft nu <i>{{submission.count_selected_receivers()}} mediapartners geselecteerd</i></span></div>
+		</div>
 	</section>
-
-
-  <div data-ng-if="submission.context.maximum_selectable_receivers !== 0 && !submission.context.select_all_receivers" id="MaxSelectableReceiverBox" class="clearfix">
-    <div><span data-translate>Pers <b>(nog max {{::submission.context.maximum_selectable_receivers}} selecteren)</b></span></div>
-    <div><span data-translate>U heeft nu <i>{{submission.count_selected_receivers()}} mediapartners geselecteerd</i></span></div>
-  </div>
   <div id="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
     <div id="receiver-{{$index}}" class="{{['receiverCard col-md-5', 'receiverCard col-md-5 col-md-offset-1'][$index % 2]}}" data-ng-class="{selected: submission.receivers_selected[receiver.id], disabled: receiver.configuration === 'unselectable' || (!node.allow_unencrypted && receiver.pgp_key_status === 'disabled')}" data-ng-click="switch_selection(receiver)">
       <div class="row receiverCardTitle">

@@ -768,6 +768,16 @@ body {
 .ng-view-form-box .nav-tabs{
 	border:none;
 	padding-left:60px;
+	padding-top:90px;
+}
+.ng-view-form-box .nav-tabs li{
+	height:60px;
+	background-color:none;
+	
+}
+.ng-view-form-box .nav-tabs li a{
+	border:none;
+	color:#9e9e9e;
 }
 .ng-view-form-box #SubmissionTabsContentBox{
 	padding:0px;

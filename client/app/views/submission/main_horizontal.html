@@ -2,14 +2,12 @@
   <ul id="SubmissionTabsNavigationBox" class="nav nav-tabs">
     <li data-ng-if="!skip_first_step" data-ng-class="{active: submission_step_stage==0, disabled: uploading}">
       <a id="step-0-link" href="javascript:void(0)" data-ng-click="goToStep(0)" data-ng-disabled="uploading">
-        1 - <span data-translate>Receiver selection</span>
+        <span data-translate>Stap 2. Media Partners &#10141;</span>
       </a>
     </li>
     <li data-ng-repeat="step in submission.context.steps | orderBy:'presentation_order'" data-ng-class="{active: submission_step_stage==$index + 1, disabled: uploading}">
       <a id="step-{{$index + (skip_first_step ? 0 : 1)}}-link" href="javascript:void(0)" data-ng-click="goToStep($index + 1)" data-ng-disabled="uploading">
-        <span data-ng-if="skip_first_step">{{$index + 1}} - </span>
-        <span data-ng-if="!skip_first_step">{{$index + 2}} - </span>
-        <span>{{::step.label}}</span>
+        <span>{{::step.label}} &#10141;</span>
       </a>
     </li>
   </ul>

@@ -172,10 +172,9 @@ body {
   /*max-width: 1234px;
   width: 100%;
   padding-bottom: 60px;*/
-    max-width: 1284px;
     width: 95%;
     position: absolute;
-    padding-left: 5%;
+    padding:0% 5%;
     left: 0px;
     background-color:#fff;
 }
@@ -226,6 +225,7 @@ body {
 	top: 0px !important;
     padding-top: 30px !important;
     padding-bottom: 20px !important;
+    z-index:600;
 
 }
 .main-nav.cloned button {
@@ -260,6 +260,7 @@ body {
   top: 30px;
   right: 55px;
   width: 600px;
+  z-index:700;
 }
 .main-container .check-document button {
   -webkit-border-radius: 3px;
@@ -274,7 +275,6 @@ body {
   color: #fff;
   float: right;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-  margin-right: 30px;
 }
 .main-container .check-document button a{
 	color:#fff;
@@ -919,6 +919,7 @@ body {
 }
 .check-updates-overlay-container nav{
 	background-color:#eee;
+	background-color:#fff;
 	padding-top:60px;
 }
 .check-updates-overlay-container nav span{

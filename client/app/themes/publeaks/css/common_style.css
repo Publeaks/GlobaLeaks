@@ -905,4 +905,17 @@ body {
 	width:100vw;
 	height:100vh;
 	background-color:#eeeeee;
+	z-index:999;
+}
+.check-updates-overlay-container nav{
+	background-color:#eee;
+	padding-top:60px;
+}
+.check-updates-overlay-container nav span{
+	display: block;
+    opacity: 1;
+    text-decoration: underline;
+}
+.check-updates-overlay-container nav span a{
+	color: #333333;
 }

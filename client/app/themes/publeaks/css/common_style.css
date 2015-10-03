@@ -174,9 +174,9 @@ body {
   width: 100%;
   padding-bottom: 60px;*/
     max-width: 1284px;
-    width: 100%;
+    width: 95%;
     position: absolute;
-    padding-left: 60px;
+    padding-left: 5%;
     left: 0px;
     background-color:#fff;
 }

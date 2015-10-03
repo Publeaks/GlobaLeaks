@@ -781,8 +781,17 @@ body {
 	border: none;
     color: #9e9e9e;
     font-size: 24px;
-    padding: 20px 0px 20px 2%;
+    padding-left: 2%;
+    height:60px;
+    line-height:60px;
     text-transform: uppercase;
+}
+.ng-view-form-box .nav-tabs li.active a{
+	background-color:#9e9e9e;
+	color:#fff;
+	border-radius:0px;
+	border:none;
+	margin:0px;
 }
 .ng-view-form-box #SubmissionTabsContentBox{
 	padding:0px;

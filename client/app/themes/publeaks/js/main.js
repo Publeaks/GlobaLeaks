@@ -8,8 +8,8 @@
 $( document ).ready(function() {
     
     
-    window.location = "/#/submission";
-	/*document.getElementById('main-intro-video').addEventListener('loadedmetadata', function() {
+    /*window.location = "/#/submission";
+	document.getElementById('main-intro-video').addEventListener('loadedmetadata', function() {
 	  this.currentTime = 11.014395;
 	}, false);*/
 

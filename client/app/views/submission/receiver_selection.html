@@ -7,7 +7,9 @@
 			<div><span data-translate>U heeft nu <i>{{submission.count_selected_receivers()}} mediapartners geselecteerd</i></span></div>
 		</div>
 	</section>
-  <div id="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
+	<section class="receiver-selection-mediapartners-container">
+		
+	<div id="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
     <div id="receiver-{{$index}}" class="{{['receiverCard col-md-5', 'receiverCard col-md-5 col-md-offset-1'][$index % 2]}}" data-ng-class="{selected: submission.receivers_selected[receiver.id], disabled: receiver.configuration === 'unselectable' || (!node.allow_unencrypted && receiver.pgp_key_status === 'disabled')}" data-ng-click="switch_selection(receiver)">
       <div class="row receiverCardTitle">
 			<label>
@@ -50,7 +52,7 @@
     </div>
     <div class="clearfix" data-ng-if="$index % 2"></div>
   </div>
-  
+  </section>
   
 
   

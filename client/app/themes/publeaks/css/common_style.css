@@ -717,6 +717,7 @@ body {
   padding:30px 0px 0px 0px;
   max-width: 1344px;
   width: 100%;
+  background-color:#fff;
 }
 .uploaden .upload-section-container-iframe{
 	height:1000px;
@@ -926,4 +927,7 @@ body {
 }
 .check-updates-overlay-container nav span a{
 	color: #333333;
+}
+.check-updates-overlay-container iframe{
+	padding-top:80px;
 }

@@ -828,12 +828,13 @@ body {
 }
 #ReceiverSelectionBoxBig .receiverCard{
 	margin-bottom: 20px;
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     padding: 0px;
-    border-radius: 0px;
     border:2px solid #fff;
     position:relative;
+    padding:10px;
+    border-radius:4px;
 }
 #ReceiverSelectionBoxBig .receiverCard.selected{
 	border:2px solid #25ddb3;
@@ -851,7 +852,7 @@ body {
     border: none;
     display: block;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 #ReceiverSelectionBoxBig .receiverCard .receiverCardTitle{
 
@@ -860,13 +861,27 @@ body {
 
 }
 #ReceiverSelectionBoxBig .receiverCard .receiverCardTitle label span{
-
+	display: none;
 }
 #ReceiverSelectionBoxBig .receiverCard .receiverCardTitle label span.receiver-name-label{
-
+	display: block;
+    font-size: 10px;
+    line-height: 15px;
+    color: #9e9e9e;
+    padding-top: 35px;
+    padding-left: 10px;
 }
 #ReceiverSelectionBoxBig .receiverCard .receiverCardTitle .col-md-1{
-
+	opacity: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 0px;
+    width: 0px;
+    overflow:hidden;
+}
+#ReceiverSelectionBoxBig .receiver-description-selection article{
+	display:none;
 }
 /* &#10141; */
 

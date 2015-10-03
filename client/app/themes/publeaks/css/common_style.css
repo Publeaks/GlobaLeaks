@@ -256,7 +256,7 @@ body {
   position: relative;
 }
 .main-container .check-document {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 55px;
   width: 600px;

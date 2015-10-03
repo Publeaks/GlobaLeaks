@@ -913,6 +913,7 @@ body {
 	width:100vw;
 	height:100vh;
 	background-color:#eeeeee;
+	background-color:#fff;
 	z-index:999;
 	display:none;
 }
@@ -929,5 +930,8 @@ body {
 	color: #333333;
 }
 .check-updates-overlay-container iframe{
-	padding-top:80px;
+	padding-top:120px;
+}
+.check-updates-overlay-container .check-updates-overlay-container-iframe{
+	height:100%:
 }

@@ -809,7 +809,9 @@ body {
     padding-bottom:60px;
 }
 .submission-receiver-cards-header p{
-	
+	padding-left: 5%;
+    font-size: 24px;
+    padding-bottom:70px;
 }
 .submission-receiver-cards-header #MaxSelectableReceiverBox{
 	
@@ -818,7 +820,8 @@ body {
 	
 }
 .submission-receiver-cards-header #MaxSelectableReceiverBox span{
-	
+	padding-left: 5%;
+    font-size: 24px;
 }
 /* &#10141; */
 

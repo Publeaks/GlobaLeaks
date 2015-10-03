@@ -827,13 +827,14 @@ body {
 	padding:0px 5%;
 }
 .ReceiverSelectionBoxBig{
-	width:132px;
-	height:132px;
-	margin-bottom:5px;
+	width: 132px;
+    height: 132px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: top;
+    outline: none;
 }
-:; + .ReceiverSelectionBoxBig{
-	
-}
+
 .ReceiverSelectionBoxBig .receiverCard{
 	margin-bottom: 0px;
     width: 110px;
@@ -843,6 +844,7 @@ body {
     position:relative;
     padding:10px;
     border-radius:4px;
+    outline:none;
 }
 .ReceiverSelectionBoxBig .receiverCard.selected{
 	border:2px solid #25ddb3;

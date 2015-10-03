@@ -172,11 +172,13 @@ body {
   /*max-width: 1234px;
   width: 100%;
   padding-bottom: 60px;*/
-    width: 95%;
+    width: 95% !important;
+    max-width: 1273px;
     position: absolute;
     padding:0% 0% 0% 5%;
     left: 0px;
     background-color:#fff;
+    margin:0px;
 }
 .main-nav ul li {
   display: inline-block;

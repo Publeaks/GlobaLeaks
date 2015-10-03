@@ -828,23 +828,44 @@ body {
 }
 #ReceiverSelectionBoxBig .receiverCard{
 	margin-bottom: 20px;
-    width: 132px;
-    height: 132px;
+    width: 130px;
+    height: 130px;
     padding: 0px;
     border-radius: 0px;
+    border:2px solid #fff;
+    position:relative;
+}
+#ReceiverSelectionBoxBig .receiverCard.selected{
+	border:2px solid #25ddb3;
+	background-color:#fff;
 }
 #ReceiverSelectionBoxBig .receiverCard figure{
 
 }
 #ReceiverSelectionBoxBig .receiverCard figure img{
-	width: 132px;
-    height: 132px;
-    min-width: 100px;
-    min-height: 100px;
+	width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     padding: 0px;
     border: none;
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
 }
-#ReceiverSelectionBoxBig .receiverCard{
+#ReceiverSelectionBoxBig .receiverCard .receiverCardTitle{
+
+}
+#ReceiverSelectionBoxBig .receiverCard .receiverCardTitle label{
+
+}
+#ReceiverSelectionBoxBig .receiverCard .receiverCardTitle label span{
+
+}
+#ReceiverSelectionBoxBig .receiverCard .receiverCardTitle label span.receiver-name-label{
+
+}
+#ReceiverSelectionBoxBig .receiverCard .receiverCardTitle .col-md-1{
 
 }
 /* &#10141; */

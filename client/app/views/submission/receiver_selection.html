@@ -11,7 +11,10 @@
 		
 	<div id="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
     <div id="receiver-{{$index}}" class="{{['receiverCard col-md-5', 'receiverCard col-md-5 col-md-offset-1'][$index % 2]}}" data-ng-class="{selected: submission.receivers_selected[receiver.id], disabled: receiver.configuration === 'unselectable' || (!node.allow_unencrypted && receiver.pgp_key_status === 'disabled')}" data-ng-click="switch_selection(receiver)">
-      <div class="row receiverCardTitle">
+        <figure>
+        	<img data-ng-src="static/{{::receiver.id}}.png" class="img-thumbnail">
+        </figure>
+        <div class="row receiverCardTitle">
 			<label>
 				<span data-ng-if="receiver.configuration !== 'unselectable' && receiver.pgp_key_status === 'enabled'">
 					<i class="glyphicon glyphicon-certificate" popover="{{'This receiver has configured the encryption key.' | translate}}" popover-placement="right" popover-trigger="mouseenter"></i>
@@ -43,9 +46,6 @@
           </div>
         </div>
       </div>
-        <figure>
-        	<img data-ng-src="static/{{::receiver.id}}.png" class="img-thumbnail">
-        </figure>
         <article class="receiver-description-selection">
 	        <p>{{::receiver.description}}</p>
         </article>

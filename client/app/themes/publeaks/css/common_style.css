@@ -770,9 +770,12 @@ body {
 	padding-top:90px;
 }
 .ng-view-form-box .nav-tabs li{
-	height:60px;
-	background-color:none;
-	
+	height: 60px;
+    width: 33%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0px;
 }
 .ng-view-form-box .nav-tabs li a{
 	border: none;

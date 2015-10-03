@@ -9,7 +9,7 @@
 	</section>
 	<section class="receiver-selection-mediapartners-container">
 		
-	<div id="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
+	<div id="ReceiverSelectionBoxBig" class="ReceiverSelectionBoxBig" data-ng-repeat="receiver in submission.receivers | filter:filterReceivers | orderBy:receiversOrderPredicate" data-ng-if="!submission.context.show_small_cards">
     <div id="receiver-{{$index}}" class="{{['receiverCard col-md-5', 'receiverCard col-md-5 col-md-offset-1'][$index % 2]}}" data-ng-class="{selected: submission.receivers_selected[receiver.id], disabled: receiver.configuration === 'unselectable' || (!node.allow_unencrypted && receiver.pgp_key_status === 'disabled')}" data-ng-click="switch_selection(receiver)">
         <figure>
         	<img data-ng-src="static/{{::receiver.id}}.png" class="img-thumbnail">

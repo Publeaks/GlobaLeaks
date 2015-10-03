@@ -906,6 +906,7 @@ body {
 	height:100vh;
 	background-color:#eeeeee;
 	z-index:999;
+	display:none;
 }
 .check-updates-overlay-container nav{
 	background-color:#eee;

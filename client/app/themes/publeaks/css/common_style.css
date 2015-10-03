@@ -715,11 +715,14 @@ body {
 .uploaden {
   background-color: #eeeeee;
   box-shadow:-1px 2px 0px rgba(0, 0, 0, 0.25);
+  padding:30px 0px 0px 0px;
 }
 .uploaden h3 {
   font-size: 90px;
   line-height: 90px;
   color: #333333;
+  padding-bottom:90px;
+  padding-left:60px;
 }
 .uploaden header {
   padding-top: 60px;
@@ -764,5 +767,19 @@ body {
 }
 .ng-view-form-box .nav-tabs{
 	border:none;
+	padding-left:60px;
+}
+.ng-view-form-box #SubmissionTabsContentBox{
+	padding:0px;
+}
+.ng-view-form-box .receiverCards{
+	background-color:#fff;
+}
+.ng-view-form-box .submission-receiver-cards-header{
+	padding-top:60px;
+}
+submission-receiver-cards-header h3{
+	font-size: 50px;
+    line-height: 30px;
 }
 

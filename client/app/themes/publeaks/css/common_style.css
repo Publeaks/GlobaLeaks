@@ -228,7 +228,10 @@ body {
     padding-top: 30px !important;
     padding-bottom: 20px !important;
     z-index:600;
-    left:0px;
+    left: 50% !important;
+    transform: translate(-50%, 0%);
+    max-width:1344px !important;
+    width:100% !important;
 
 }
 .main-nav.cloned button {

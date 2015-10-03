@@ -228,6 +228,7 @@ body {
     padding-top: 30px !important;
     padding-bottom: 20px !important;
     z-index:600;
+    left:5% !important;
 
 }
 .main-nav.cloned button {
@@ -259,10 +260,10 @@ body {
 }
 .main-container .check-document {
   position: fixed;
-  top: 30px;
+  top: 20px;
   right: 55px;
   width: 600px;
-  z-index:700;
+  z-index:810;
 }
 .main-container .check-document button {
   -webkit-border-radius: 3px;

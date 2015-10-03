@@ -97,7 +97,7 @@ $('.omgeving-video-box video,.omgeving-video-box .close-video').click(function()
 
 
 $('#main-main-nav').stickThis({
-    top:        26,      // top position of sticky element, measured from 'ceiling'
+    top:        30,      // top position of sticky element, measured from 'ceiling'
     minscreenwidth: 0,      // element will not be sticky when viewport width smaller than this
     maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this 
     zindex:     800,      // z-index value of sticky element

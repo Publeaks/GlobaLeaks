@@ -781,6 +781,7 @@ body {
 	border: none;
     color: #9e9e9e;
     font-size: 24px;
+    padding:0px;
     padding-left: 2%;
     height:60px;
     line-height:60px;
@@ -802,9 +803,22 @@ body {
 .ng-view-form-box .submission-receiver-cards-header{
 	padding-top:60px;
 }
-submission-receiver-cards-header h3{
+.submission-receiver-cards-header h3{
 	font-size: 50px;
     line-height: 30px;
+    padding-bottom:60px;
+}
+.submission-receiver-cards-header p{
+	
+}
+.submission-receiver-cards-header #MaxSelectableReceiverBox{
+	
+}
+.submission-receiver-cards-header #MaxSelectableReceiverBox div{
+	
+}
+.submission-receiver-cards-header #MaxSelectableReceiverBox span{
+	
 }
 /* &#10141; */
 

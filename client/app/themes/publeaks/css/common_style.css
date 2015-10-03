@@ -827,7 +827,25 @@ body {
 	padding:0px 5%;
 }
 #ReceiverSelectionBoxBig .receiverCard{
-	margin-bottom:5px;
+	margin-bottom: 20px;
+    width: 132px;
+    height: 132px;
+    padding: 0px;
+    border-radius: 0px;
+}
+#ReceiverSelectionBoxBig .receiverCard figure{
+
+}
+#ReceiverSelectionBoxBig .receiverCard figure img{
+	width: 132px;
+    height: 132px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0px;
+    border: none;
+}
+#ReceiverSelectionBoxBig .receiverCard{
+
 }
 /* &#10141; */
 

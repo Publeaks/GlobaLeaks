@@ -153,7 +153,6 @@ body {
 .standard-box {
   background-color: #fff;
   padding: 50px 60px 0px 60px;
-  max-width: 1224px;
   min-height: 300px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -179,6 +178,7 @@ body {
     left: 0px;
     background-color:#fff;
     margin:0px;
+    margin-left:30px;
 }
 .main-nav ul li {
   display: inline-block;
@@ -258,10 +258,12 @@ body {
 
 /* -------------------------------- begin main container -------------------------------------*/
 .main-container {
-  max-width: 1344px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
+	max-width: 1404px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0px 30px;
 }
 .main-container .check-document {
   position: fixed;
@@ -340,7 +342,7 @@ body {
   text-decoration: underline;
 }
 .organisatie .dark-box {
-  width: 42.8%;
+  width: 49.5%;
   display: inline-block;
   vertical-align: top;
   position: relative;

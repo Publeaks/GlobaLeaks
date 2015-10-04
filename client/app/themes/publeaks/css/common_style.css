@@ -625,7 +625,10 @@ body {
 	    font-size: 12px;
 	}
 	.main-nav ul li{
-		padding-left:30px;
+		padding-right:30px;
+	}
+	.organisatie article h2{
+		font-size:60px;
 	}
 }
 

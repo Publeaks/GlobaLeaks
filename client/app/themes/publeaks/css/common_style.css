@@ -615,6 +615,15 @@ body {
 	.waarom-delen article ul li img{
 		width:100%;
 	}
+	.main-container .check-document span a {
+		font-size:12px;
+	}
+	.main-container .check-document button{
+		display: block;
+	    float: right;
+	    width: 140px;
+	    font-size: 12px;
+	}
 }
 
 

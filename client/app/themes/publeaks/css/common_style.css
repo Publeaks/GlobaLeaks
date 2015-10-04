@@ -174,7 +174,7 @@ body {
     width: 95% !important;
     max-width: 1273px;
     position: absolute;
-    padding:0% 0% 0% 5%;
+    padding:0% 0% 0% 70px;
     left: 0px;
     background-color:#fff;
     margin:0px;
@@ -225,16 +225,21 @@ body {
 }
 .main-nav.cloned{
 	top: 0px !important;
-    z-index:600;
+    z-index: 600;
     left: 50% !important;
     transform: translate(-50%, 0%);
-    max-width:1344px !important;
-    width:100% !important;
-    padding:30px 0px 20px 0px !important;
+    max-width: 1404px;
+    width: 100% !important;
+    padding: 0px 30px 0px 30px !important;
+    box-sizing: border-box;
+    background-color:transparent !important;
 
 }
 .main-nav.cloned ul{
-	padding-left:5%;
+	padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
 }
 .main-nav.cloned button {
   opacity: 1;

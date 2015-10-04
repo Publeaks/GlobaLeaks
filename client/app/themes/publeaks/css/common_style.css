@@ -233,6 +233,9 @@ body {
     padding:30px 0px 20px 0px !important;
 
 }
+.main-nav.cloned ul{
+	padding-left:5%;
+}
 .main-nav.cloned button {
   opacity: 1;
   transition: opacity linear 0.3s;

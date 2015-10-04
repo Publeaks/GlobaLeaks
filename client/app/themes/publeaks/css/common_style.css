@@ -597,7 +597,7 @@ body {
 
 
 
-@media screen and (max-width: 1390px) {
+/*@media screen and (max-width: 1390px) {
     .organisatie .dark-box{
 		width: 39.5%;
 		height: 600px;
@@ -620,7 +620,7 @@ body {
 	.waarom-delen article ul li img{
 		width:100%;
 	}
-}
+}*/
 
 
 /* END security progression part */

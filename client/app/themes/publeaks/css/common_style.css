@@ -488,7 +488,7 @@ body {
   left: 0px;
   bottom: 0px;
   right: 0px;
-  z-index: 990;
+  z-index: 1000;
   width: 100vw;
   height: 100vh;
   display: block;
@@ -520,6 +520,7 @@ body {
   text-align: center;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  z-index:400;
 }
 .security-loading-container div.loading-security {
   width: 100%;
